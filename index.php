@@ -213,12 +213,12 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 						<div class="col-md-3 col-sm-6 col-xs-6">
 							<div class="course">
 								<div class="course-img">
-									<img src="./img/course01.jpg" alt="">
+									<img src="./img/tea.png" alt="">
 									<i class="course-link-icon fa fa-link"></i>
 								</div>
-								<a class="course-title" href="#">Certificación en Rechazo Alimentario</a>
+								<a class="course-title" href="#">Estrategias educativas para el alumno con TEA</a>
 								<div class="course-details">
-									<span class="course-category">(Categoría del curso)</span>
+									<span class="course-category">Curso sincrónico online</span>
 									<span class="course-price course-free">$(precio)</span>
 								</div>
 							</div>
@@ -229,12 +229,12 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 						<div class="col-md-3 col-sm-6 col-xs-6">
 							<div class="course">
 								<a href="#" class="course-img">
-									<img src="./img/course02.jpg" alt="">
+									<img src="./img/alergia_alimentaria.png" alt="">
 									<i class="course-link-icon fa fa-link"></i>
 								</a>
-								<a class="course-title" href="#">Método BLW/BLISS</a>
+								<a class="course-title" href="#">Alergias alimentarias</a>
 								<div class="course-details">
-									<span class="course-category">(Categoría del curso)</span>
+									<span class="course-category">Curso asincrónico online</span>
 									<span class="course-price course-free">$(precio)</span>
 								</div>
 							</div>
@@ -245,27 +245,29 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 						<div class="col-md-3 col-sm-6 col-xs-6">
 							<div class="course">
 								<a href="#" class="course-img">
-									<img src="./img/course03.jpg" alt="">
+									<img src="./img/apraxia_infantil.png" alt="">
 									<i class="course-link-icon fa fa-link"></i>
 								</a>
-								<a class="course-title" href="#">Actualización Alergias Alimentarias</a>
+								<a class="course-title" href="#">Apraxia del habla infantil</a>
 								<div class="course-details">
-									<span class="course-category">(Categoría del curso)</span>
+									<span class="course-category">Curso sincrónico online</span>
 									<span class="course-price course-free">$(precio)</span>
 								</div>
 							</div>
 						</div>
 						<!-- /single course -->
 
+
+
 						<div class="col-md-3 col-sm-6 col-xs-6">
 							<div class="course">
 								<a href="#" class="course-img">
-									<img src="./img/course04.jpg" alt="">
+									<img src="./img/interaccion_digital.png" alt="">
 									<i class="course-link-icon fa fa-link"></i>
 								</a>
-								<a class="course-title" href="#">Formación en Lactancia Materna</a>
+								<a class="course-title" href="#">Estrategias prácticas para la interacción digital</a>
 								<div class="course-details">
-									<span class="course-category">(Categoría del curso)</span>
+									<span class="course-category">Curso sincrónico online</span>
 									<span class="course-price course-free">$(precio)</span>
 								</div>
 							</div>
