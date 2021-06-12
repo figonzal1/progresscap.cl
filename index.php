@@ -17,7 +17,7 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 
 	<title>Capacitaciones Progress</title>
 	<meta name="description" content="Capacitaciones progress" />
-	<!--<link rel="canonical" href="https://www.centroamai.cl/" />-->
+	<link rel="canonical" href="https://www.progresscap.cl/" />
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
