@@ -24,6 +24,7 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -61,7 +62,7 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 			<div class="navbar-header">
 				<!-- Logo -->
 				<div class="navbar-brand">
-					<a class="logo" href="https://cap-progress.herokuapp.com/">
+					<a class="logo" href="https://www.progresscap.cl/">
 						<img src="img/logo_icono.png" alt="logo">
 					</a>
 				</div>
@@ -78,17 +79,19 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 			<nav id="nav">
 
 				<ul class="main-menu nav navbar-nav navbar-left">
-					<li><a href="https://cap-progress.herokuapp.com/">Inicio</a></li>
-					<li><a href="https://cap-progress.herokuapp.com/#acerca">Acerca</a></li>
-					<li><a href="https://cap-progress.herokuapp.com/#cursos">Cursos</a></li>
-					<li><a href="https://cap-progress.herokuapp.com/#contacto">Contacto</a></li>
+					<li><a href="https://www.progresscap.cl/">Inicio</a></li>
+					<li><a href="https://www.progresscap.cl/#acerca">Acerca</a></li>
+					<li><a href="https://www.progresscap.cl/#cursos">Cursos</a></li>
+					<li><a href="https://www.progresscap.cl/#contacto">Contacto</a></li>
 				</ul>
 
 				<ul class="main-menu nav navbar-nav navbar-right">
-					<li><a href="https://capacitaciones.centroamai.cl/" target="_blank" rel="noopener">Moodle</a></li>
+					<li><a href="https://moodle.progresscap.cl/" target="_blank" rel="noopener">Moodle</a></li>
 				</ul>
 
 			</nav>
+
+
 			<!-- /Navigation -->
 
 		</div>
@@ -204,7 +207,7 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 				<!-- /row -->
 
 				<!-- courses -->
-				<div id="courses-wrapper">
+				<div id="courses-wrapper" class="mb-4">
 
 					<!-- row -->
 					<div class="row">
@@ -258,7 +261,7 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 						<!-- /single course -->
 
 
-
+						<!-- /single course -->
 						<div class="col-md-3 col-sm-6 col-xs-6">
 							<div class="course">
 								<a href="#" class="course-img">
@@ -274,17 +277,33 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 						</div>
 						<!-- /single course -->
 
+						<!-- /single course -->
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="#" class="course-img">
+									<img src="./img/anatomofisiologia.png" alt="">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title" href="#">Anatomofisiología de la articulación</a>
+								<div class="course-details">
+									<span class="course-category">Curso sincrónico online</span>
+									<span class="course-price course-free">$(precio)</span>
+								</div>
+							</div>
+						</div>
+						<!-- /single course -->
+
 					</div>
 					<!-- /row -->
 
 				</div>
 				<!-- /courses -->
 
-				<div class="row" style="margin-bottom: 80px;">
+				<!--<div class="row" style="margin-bottom: 80px;">
 					<div class="center-btn">
 						<a class="main-button icon-button" href="#">Más cursos</a>
 					</div>
-				</div>
+				</div>-->
 
 			</div>
 			<!-- container -->
@@ -421,7 +440,7 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 
 				<!-- contact information -->
 				<div class="col-md-6">
-					<h4>Contact Information</h4>
+					<h4>Información de contacto</h4>
 					<ul class="contact-details">
 						<li><i class="fa fa-envelope"></i>email@email.com</li>
 						<li><i class="fa fa-phone"></i>numero telefono</li>
@@ -433,10 +452,10 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 				<!-- footer nav -->
 				<div class="col-md-6">
 					<ul class="footer-nav">
-						<li><a href="https://cap-progress.herokuapp.com/">Inicio</a></li>
-						<li><a href="https://cap-progress.herokuapp.com/#acerca">Acerca</a></li>
-						<li><a href="https://cap-progress.herokuapp.com/#cursos">Cursos</a></li>
-						<li><a href="https://cap-progress.herokuapp.com/#contacto">Contacto</a></li>
+						<li><a href="https://www.progresscap.cl/">Inicio</a></li>
+						<li><a href="https://www.progresscap.cl/#acerca">Acerca</a></li>
+						<li><a href="https://www.progresscap.cl/#cursos">Cursos</a></li>
+						<li><a href="https://www.progresscap.cl/#contacto">Contacto</a></li>
 					</ul>
 				</div>
 
@@ -446,7 +465,6 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 			<div class="col-md-9" style="margin-top: 40px;margin-bottom: 40px;">
 				<div class="footer-copyright">
 					Copyright &copy;
-					<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 					<script>
 						document.write(new Date().getFullYear());
 					</script> Capacitaciones Progress
