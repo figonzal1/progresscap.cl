@@ -623,7 +623,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .course .course-title {
 	display: block;
-	height: 42px;
+	height: 35px;
 }
 
 .course .course-details {
