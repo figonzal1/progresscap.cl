@@ -150,7 +150,7 @@ blockquote:before {
 	top: 0;
 	bottom: 0;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#374050), to(#798696));
-	background-image: linear-gradient(to bottom, #818181 0%, #69e9f5 100%);
+	background-image: linear-gradient(to bottom, #9eb6e0 0%, #ffb100 100%);
 	opacity: 0.9;
 }
 
@@ -160,7 +160,7 @@ blockquote:before {
 	position: relative;
 	display: inline-block;
 	padding: 10px 30px;
-	background-color: #69e9f5;
+	background-color: #ffb100;
 	border: 2px solid transparent;
 	border-radius: 40px;
 	color: #FFF;
@@ -170,8 +170,8 @@ blockquote:before {
 
 .main-button:hover, .main-button:focus {
 	background-color: #fff;
-	border: 2px solid #69e9f5;
-	color: #69e9f5;
+	border: 2px solid #ffb100;
+	color: #ffb100;
 }
 
 .main-button.icon-button:hover, .main-button.icon-button:focus {
@@ -213,7 +213,7 @@ textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
-	border-color: #69e9f5;
+	border-color: #ffb100;
 }
 
 /*------------------------------------*\
@@ -278,7 +278,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	content: "";
 	display: block;
 	height: 2px;
-	background-color: #69e9f5;
+	background-color: #ffb100;
 	width: 100%;
 	-webkit-transform: translateY(5px);
 	-ms-transform: translateY(5px);
@@ -468,7 +468,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	border-radius: 50%;
 	font-size: 30px;
 	border: 1px solid #EBEBEB;
-	color: #69e9f5;
+	color: #ffb100;
 }
 
 .feature-content {
@@ -584,7 +584,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background-color: #69e9f5;
+	background-color: #ffb100;
 	opacity: 0;
 	-webkit-transition: 0.2s opacity;
 	transition: 0.2s opacity;
@@ -690,14 +690,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .footer-nav li a:hover, .footer-nav li a:focus {
-	color: #69e9f5;
+	color: #ffb100;
 }
 
 .footer-nav li a:after {
 	content: "";
 	display: block;
 	height: 2px;
-	background-color: #69e9f5;
+	background-color: #ffb100;
 	width: 100%;
 	-webkit-transform: translateY(5px);
 	-ms-transform: translateY(5px);
@@ -795,7 +795,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .contact-details li i {
-	color: #69e9f5;
+	color: #ffb100;
 	margin-right: 15px;
 	border: 1px solid #EBEBEB;
 	border-radius: 50%;
@@ -831,7 +831,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	width: 4px;
 	height: 4px;
 	border-radius: 50%;
-	background-color: #69e9f5;
+	background-color: #ffb100;
 	margin-right: 10px;
 }
 

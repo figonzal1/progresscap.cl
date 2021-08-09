@@ -64,7 +64,7 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
             <!-- Logo -->
             <div class="navbar-brand">
                 <a class="logo" href="https://www.progresscap.cl/">
-                    <img src="img/logo_icono.png" alt="logo">
+                    <img src="img/progress_logo_only.png" alt="logo">
                 </a>
             </div>
             <!-- /Logo -->
@@ -176,17 +176,20 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
 
                 </div>
 
-                <div class="col-md-6">
-                    <div class="about-img">
-                        <img src="img/logo_completo.png" alt="">
-                    </div>
+                <div class="col-md-6"
+                ">
+                <div class="about-img px-auto">
+                    <img style="max-width: 80%;display: block;  margin-left: auto;  margin-right: auto;"
+                         src="img/progress_logo_completo.png" alt="Capacitaciones Progress"
+                    >
                 </div>
-
             </div>
-            <!-- row -->
 
         </div>
-        <!-- container -->
+        <!-- row -->
+
+    </div>
+    <!-- container -->
     </div>
 </section>
 <!-- /About -->
