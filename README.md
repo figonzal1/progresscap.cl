@@ -1,5 +1,5 @@
 <p style="text-align:center;">
-  <img src="https://github.com/figonzal1/progresscap.cl/blob/main/img/logo.png?raw=true" style="display: block;margin-left: auto;margin-right: auto;width: 50%" height="400px" alt="">
+  <img src="https://github.com/figonzal1/progresscap.cl/blob/main/img/progress_logo_completo.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%" height="400px" alt="">
 </p>
 
 <h1 style="text-align: center;"><a href="https://progresscap.cl">Capacitaciones Progress</a></h1>
