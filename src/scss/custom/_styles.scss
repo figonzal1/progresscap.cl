@@ -1,0 +1,97 @@
+// Your custom variables
+@import "variables";
+
+/**
+NAVBAR
+ */
+body {
+  min-height: 200vh;
+}
+
+.navbar-default {
+  transition: 500ms ease;
+  background: transparent;
+}
+
+.navbar-default.scrolled {
+  background: $secondary !important;
+}
+
+//Round Icon
+.icon-background,
+.icon-background-lg,
+.icon-background-md {
+  line-height: 1;
+  position: relative;
+  border-radius: 50%;
+  border: 2px rgba(215, 215, 215, 0.6) solid;
+}
+
+.icon-background-lg {
+  width: 90px;
+  height: 90px;
+}
+
+.icon-background-md {
+  width: 40px;
+  height: 40px;
+}
+
+
+.icon {
+  color: $primary;
+}
+
+//Courses Mask
+.mask {
+  background-color: $primaryMask;
+}
+
+.mask .icon {
+  color: #ffffff;
+}
+
+.mask .icon-background {
+  line-height: 1;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+.old-price {
+  color: red;
+}
+
+/**
+HR
+ */
+.hr-light {
+  max-width: 25%;
+}
+
+.hr-light,
+.hr-light-full-width {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hr-light-full-width {
+  max-width: 100%;
+}
+
+/**
+Copyright
+ */
+.copyright {
+  background-color: $secondary;
+  font-size: 14px;
+}
+
+.copyright a,
+.copyright a:hover {
+  color: white;
+}

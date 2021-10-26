@@ -3,35 +3,20 @@ header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header("X-XSS-Protection: 1; mode=block");
 header("Referrer-Policy: strict-origin-when-cross-origin");
+header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://use.fontawesome.com https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://use.fontawesome.com");
 header("Permissions-Policy: fullscreen=(), geolocation=(), camera=(), microphone=()");
-header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-src 'self' data:;style-src 'self' 'unsafe-inline';script-src 'self' 'sha256-ajGjo5eD0JzFPdnpuutKT6Sb5gLu+Q9ru594rwJogGQ=' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'sha256-Mrs88g1byVkLHsPw+1FUhrKsHB9Qh7nyDJ7afahdX9s=' 'sha256-eGG8qgSAZWp6J3WOiPYNCznSvv4IDhyKZs5w6fwksLs=' https://maps.googleapis.com ;frame-src https://www.google.com ");
+header('Accept-Encoding: gzip, compress, br');
 ?>
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
 
     <title>Capacitaciones Progress</title>
     <meta name="description" content="Capacitaciones progress"/>
     <link rel="canonical" href="https://www.progresscap.cl/"/>
-
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -44,475 +29,664 @@ header("Content-Security-Policy:frame-ancestors 'none'; default-src 'self';img-s
     <meta name="msapplication-config" content="/img/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" rel="preload stylesheet" as="style"
+          type="text/css" crossorigin/>
 
+    <!-- Google Fonts Roboto -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="preload"
+            as="font"
+            crossorigin
+    />
 
+    <!-- CUSTOM MDB -->
+    <link rel="preload stylesheet" href="src/scss/mdb.free.min.css" as="style" type="text/css" crossorigin>
+
+    <style>
+
+        .dark-bg {
+            background: linear-gradient(
+                    180deg,
+                    rgba(73, 119, 159, 0.9),
+                    rgba(255, 177, 0, 0.8) 100%
+            );
+        }
+
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+            height: 100vh;
+        }
+
+        .carousel-item:nth-child(1),
+        .carousel-item:nth-child(2),
+        .carousel-item:nth-child(3) {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-item:nth-child(1) {
+            background-image: url('img/background2-min.jpg');
+        }
+
+        .carousel-item:nth-child(2) {
+            background-image: url('img/background2-min.jpg');
+        }
+
+        .carousel-item:nth-child(3) {
+            background-image: url('img/background2-min.jpg');
+        }
+
+    </style>
 </head>
-
 <body>
 
-<!-- Header -->
-<header id="header" class="transparent-nav">
-    <div class="container">
+<header>
 
-        <div class="navbar-header">
-            <!-- Logo -->
-            <div class="navbar-brand">
-                <a class="logo" href="https://www.progresscap.cl/">
-                    <img src="img/progress_logo_only.png" alt="logo">
-                </a>
-            </div>
-            <!-- /Logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.progresscap.cl">
 
-            <!-- Mobile toggle -->
-            <button class="navbar-toggle">
-                <span></span>
+                <img src="img/progress_logo_completo-min.jpg" height="60" alt="Progress Cap Logo" loading="lazy">
+
+            </a>
+            <button
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-mdb-target="#navbarNavAltMarkup"
+                    data-mdb-toggle="collapse"
+                    type="button"
+            >
+                <i class="fas fa-bars"></i>
             </button>
-            <!-- /Mobile toggle -->
+
+            <!-- RIGH MENU -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-nav-scroll">
+                    <a href="#" aria-current="page" class="nav-link active">Inicio</a>
+                    <a href="#" aria-current="page" class="nav-link">Nosotros</a>
+                    <a href="#" aria-current="page" class="nav-link">Cursos</a>
+                    <a href="#" aria-current="page" class="nav-link">Contacto</a>
+                </div>
+
+                <!-- Left Icons -->
+                <div class="navbar-nav d-flex flex-row ms-auto">
+                    <a href="https://www.moodle.progresscap.cl" rel="noopener noreferrer" target="_blank"
+                       class="nav-link ms-auto ms-md-0">Moodle</a>
+                    <a class="nav-link" href="https://www.instagram.com/cap.progress/"
+                       rel="noopener noreferrer" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Navigation -->
-        <nav id="nav">
-
-            <ul class="main-menu nav navbar-nav navbar-left">
-                <li><a href="https://www.progresscap.cl/">Inicio</a></li>
-                <li><a href="https://www.progresscap.cl/#acerca">Acerca</a></li>
-                <li><a href="https://www.progresscap.cl/#cursos">Cursos</a></li>
-                <li><a href="https://www.progresscap.cl/#contacto">Contacto</a></li>
-            </ul>
-
-            <ul class="main-menu nav navbar-nav navbar-right">
-                <li><a href="https://moodle.progresscap.cl/" target="_blank" rel="noopener">Moodle</a></li>
-            </ul>
-
-        </nav>
-
-
-        <!-- /Navigation -->
-
-    </div>
+    </nav>
 </header>
-<!-- /Header -->
 
-<!-- Home -->
-<section id="inicio">
-    <div id="home" class="hero-area">
 
-        <!-- Backgound Image -->
-        <div class="bg-image bg-parallax overlay" style="background-image:url(img/home-background.jpg)"></div>
-        <!-- /Backgound Image -->
+<main id="inicio">
 
-        <div class="home-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h1 class="white-text">Capacitaciones Progress</h1>
-                        <p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant, eu
-                            pro alii error homero. (Cambiar texto)</p>
-                        <a class="main-button icon-button" href="#">¡Bienvenido!</a>
+    <!-- Background Image -->
+    <!-- Carrousel -->
+    <div class="carousel slide  shadow-2-strong" data-mdb-ride="carousel" id="introCarousel">
+
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+            <li class="active" data-mdb-slide-to="0" data-mdb-target="#introCarousel"></li>
+            <li data-mdb-slide-to="1" data-mdb-target="#introCarousel"></li>
+            <li data-mdb-slide-to="2" data-mdb-target="#introCarousel"></li>
+        </ol>
+
+        <!-- Imagenes -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active webp" data-mdb-interval="7000">
+                <div class="mask dark-bg w-100">
+
+                    <div class=" d-flex align-items-center h-100">
+
+                        <div class="col-7">
+                            <div class="d-row text-center text-white">
+                                <h2 class="h1">Estrategias para la Interacción Digital</h2>
+                                <div class="mx-5 px-5">
+                                    <p class="px-5 pt-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Curabitur eget
+                                        bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
+                                        ut.
+                                        Mauris laoreet metus ut odio dictum, ut aliquam massa pretium. Mauris at lorem
+                                        in
+                                        lorem dictum euismod. Sed vitae nibh ut tortor ornare cursus. Interdum et
+                                        malesuada
+                                        fames a</p>
+                                </div>
+                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
+
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img src="img/cursos/interaccion_digital-min.png"
+                                 class="img-responsive rounded shadow-5-strong"
+                                 height="500"
+                                 loading="lazy"
+                                 alt="Interaccion Digital">
+                        </div>
+
+
                     </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item webp" data-mdb-interval="7000">
+                <div class="mask dark-bg w-100">
+
+                    <div class=" d-flex align-items-center h-100">
+
+                        <div class="col-7">
+                            <div class="d-row text-center text-white">
+                                <h2 class="h1">Alergia Alimentaria</h2>
+                                <div class="mx-5 px-5">
+                                    <p class="px-5 pt-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Curabitur eget
+                                        bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
+                                        ut.
+                                        Mauris laoreet metus ut odio dictum, ut aliquam massa pretium. Mauris at lorem
+                                        in
+                                        lorem dictum euismod. Sed vitae nibh ut tortor ornare cursus. Interdum et
+                                        malesuada
+                                        fames a</p>
+                                </div>
+                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
+
+                            </div>
+                        </div>
+                        <div class="col-5 ">
+                            <img src="img/cursos/alergia_alimentaria-min.png"
+                                 class="img-responsive rounded shadow-5-strong"
+                                 height="500"
+                                 loading="lazy"
+                                 alt="Alergia Alimentaria">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item webp" data-mdb-interval="7000">
+                <div class="mask dark-bg w-100">
+
+                    <div class=" d-flex align-items-center h-100">
+
+                        <div class="col-7">
+                            <div class="d-row text-center text-white">
+                                <h2 class="h1">Estrategias Educativas para el alumno con TEA</h2>
+                                <div class="mx-5 px-5">
+                                    <p class="px-5 pt-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Curabitur eget
+                                        bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
+                                        ut.
+                                        Mauris laoreet metus ut odio dictum, ut aliquam massa pretium. Mauris at lorem
+                                        in
+                                        lorem dictum euismod. Sed vitae nibh ut tortor ornare cursus. Interdum et
+                                        malesuada
+                                        fames a</p>
+                                </div>
+                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
+
+                            </div>
+                        </div>
+                        <div class="col-5 ">
+                            <img src="img/cursos/tea-min.png" class="img-responsive rounded shadow-5-strong"
+                                 height="500"
+                                 loading="lazy"
+                                 alt="Transtorno Espectro Autista">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section id="Acerca">
+
+        <div class="container mt-5 pt-5">
+            <div class="row mb-5">
+                <div class="col-6">
+                    <h3 class="h1">Bienvenido a Progress</h3>
+
+                    <h3 class="mt-5 fw-bold">Quienes Somos</h3>
+                    <p class="text-muted mb-5 lead">Somos un <b>Organismo Técnico de Capaticatión</b> (OTEC) enfocado en
+                        la
+                        capacitación de
+                        profesionales de las áreas de salud y educación</p>
+
+                    <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
+
+                        <div class="icon-background-lg d-flex justify-content-center align-items-center flex-shrink-0">
+                            <i class="fas fa-chalkboard-teacher fa-2x icon"></i>
+                        </div>
+
+                        <div class="ms-4 flex-grow-1">
+                            <h4 class="h4 mb-3">Cursos Online</h4>
+                            <p class="text-muted lead">Ofrecemos cursos sincrónicos y asincrónico</p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
+
+                        <div class="icon-background-lg d-flex justify-content-center align-items-center flex-shrink-0">
+                            <i class="fas fa-chalkboard-teacher fa-2x icon"></i>
+                        </div>
+
+                        <div class="ms-4 flex-grow-1">
+                            <h4 class="h4 mb-3">Cursos Online</h4>
+                            <p class="text-muted lead">Ofrecemos cursos sincrónicos y asincrónico</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="/img/progress_logo_completo-min.jpg" alt="ProgressCap Logo"
+                         loading="lazy">
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
-<!-- /Home -->
 
-<!-- About -->
-<section id="acerca">
-    <div id="about" class="section">
+    <section id="Cursos">
 
-        <!-- container -->
+        <div class="container mt-5 pt-5">
+
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="text-center">
+                        <h3 class="h1">Explora nuestros cursos</h3>
+                        <p class="h5 text-muted lead">(Cambiar texto) Libris vivendo eloquentiam ex ius, nec id
+                            splendide
+                            abhorreant.</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+
+                    <!-- GRID SISTEM -->
+                    <div class="row g-4">
+
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="bg-image hover-overlay hover-zoom">
+                                    <img
+                                            src="img/cursos/apraxia_infantil-min.png"
+                                            class="card-img-top"
+                                            alt="Apraxia Infantil"
+                                            loading="lazy"
+                                    />
+                                    <div class="mask ">
+                                        <a href="#">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+
+                                                <div class="icon-background d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-external-link-alt fa-2x icon"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Apraxia del Habla Infantil</h5>
+                                    <p class="card-text lead">
+                                        (Agregar descripcion del curso de apraxia infantil)
+                                    </p>
+                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="h5 text-muted">Sincrónico online</h5>
+                                        <h5 class="h5 text-muted ms-auto">
+                                            <del class="old-price">$150.000</del>
+                                            $80.000
+                                        </h5>
+                                    </div>
+                                    <div class="d-flex d-none">
+                                        <p class="ms-auto mb-0 pb-0 lead">Oferta por 48 horas</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="bg-image hover-overlay hover-zoom">
+                                    <img
+                                            src="img/cursos/anatomofisiologia-min.png"
+                                            class="card-img-top"
+                                            alt="Anatomofisiologia"
+                                            loading="lazy"
+                                    />
+                                    <div class="mask ">
+                                        <a href="#">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+
+                                                <div class="icon-background d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-external-link-alt fa-2x icon"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Anatomofisiología de la Articulación</h5>
+                                    <p class="card-text lead">
+                                        (Agregar descripcion del curso de anatomofisiología)
+                                    </p>
+
+                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="h5 text-muted">Sincrónico online</h5>
+                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="bg-image hover-overlay hover-zoom">
+                                    <img
+                                            src="img/cursos/alergia_alimentaria-min.png"
+                                            class="card-img-top"
+                                            alt="Alergia Alimentaria"
+                                            loading="lazy"
+                                    />
+                                    <div class="mask ">
+                                        <a href="#">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+
+                                                <div class="icon-background d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-external-link-alt fa-2x icon"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Alergia Alimentaria</h5>
+                                    <p class="card-text text-muted lead">El curso online de Alergias alimentarias es
+                                        dictado
+                                        por
+                                        profesionales de la salud y orientado a profesionales de la salud afines que se
+                                        desempeñen en el área de alimentación.</p>
+
+                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="h5 text-muted">Asincrónico online</h5>
+                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mt-2 g-4 d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="bg-image hover-overlay hover-zoom">
+                                    <img
+                                            src="img/cursos/interaccion_digital-min.png"
+                                            class="card-img-top"
+                                            alt="Curso Interacción Digital"
+                                            loading="lazy"
+                                    />
+                                    <div class="mask ">
+                                        <a href="#">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+
+                                                <div class="icon-background d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-external-link-alt fa-2x icon"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Interacción digital</h5>
+                                    <p class="card-text text-muted lead">(Agregar descripción del curso de interacción
+                                        digital)</p>
+
+                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="h5 text-muted">Sincrónico online</h5>
+                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="bg-image hover-overlay hover-zoom">
+                                    <img
+                                            src="img/cursos/tea-min.png"
+                                            class="card-img-top"
+                                            alt="Curso TEA"
+                                            loading="lazy"
+                                    />
+                                    <div class="mask">
+                                        <a href="#">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+
+                                                <div class="icon-background d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-external-link-alt fa-2x icon"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Estrategias Educativas TEA</h5>
+                                    <p class="card-text text-muted lead">(Agregar descripción del curso de estrategias
+                                        educativas)</p>
+
+                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="h5 text-muted">Sincrónico online</h5>
+                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="mt-5 pt-5">
+
+    <section id="contacto">
+
         <div class="container">
+            <div class="row mt-5 mb-4 p-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="h5 fw-normal mb-3 text-uppercase">Contacto</h5>
+                    <hr class="hr-light mb-lg-5 mb-4">
 
-            <!-- row -->
-            <div class="row" style="margin-top: 80px;">
+                    <div class="contacto">
+                        <div class="row">
+                            <div class="d-flex justify-content-start align-items-center mb-2">
 
-                <div class="col-md-6">
-                    <div class="section-header">
-                        <h2>Bienvenido a Progress</h2>
-                        <p class="lead">(Cambiar texto) Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.
-                        </p>
-                    </div>
+                                <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt icon"></i>
+                                </div>
 
-                    <!-- feature -->
-                    <div class="feature">
-                        <i class="feature-icon fa fa-flask"></i>
-                        <div class="feature-content">
-                            <h4>Cursos Online </h4>
-                            <p>(Cambiar texto) Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas
-                                veniam nominati.</p>
-                        </div>
-                    </div>
-                    <!-- /feature -->
+                                <div class="ms-3 flex-grow-1">
+                                    <p class="text-muted m-0 ">Las Rojas Poniente #236, La Serena, Chile.</p>
+                                </div>
 
-                    <!-- feature -->
-                    <div class="feature">
-                        <i class="feature-icon fa fa-users"></i>
-                        <div class="feature-content">
-                            <h4>Profesores Expertos</h4>
-                            <p>(Cambiar texto) Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas
-                                veniam nominati.</p>
-                        </div>
-                    </div>
-                    <!-- /feature -->
-
-                    <!-- feature -->
-                    <div class="feature">
-                        <i class="feature-icon fa fa-comments"></i>
-                        <div class="feature-content">
-                            <h4>Comunidad</h4>
-                            <p>(Cambiar texto) Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas
-                                veniam nominati.</p>
-                        </div>
-                    </div>
-                    <!-- /feature -->
-
-                </div>
-
-                <div class="col-md-6"
-                ">
-                <div class="about-img px-auto">
-                    <img style="max-width: 80%;display: block;  margin-left: auto;  margin-right: auto;"
-                         src="img/progress_logo_completo.png" alt="Capacitaciones Progress"
-                    >
-                </div>
-            </div>
-
-        </div>
-        <!-- row -->
-
-    </div>
-    <!-- container -->
-    </div>
-</section>
-<!-- /About -->
-
-<!-- Courses -->
-<section id="cursos">
-    <div id="courses" class="section">
-
-        <!-- container -->
-        <div class="container">
-
-            <!-- row -->
-            <div class="row" style="margin-top: 80px;">
-                <div class="section-header text-center">
-                    <h2>Explora nuestros cursos</h2>
-                    <p class="lead">(Cambiar texto) Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-                </div>
-            </div>
-            <!-- /row -->
-
-            <!-- courses -->
-            <div id="courses-wrapper" class="mb-4">
-
-                <!-- row -->
-                <div class="row">
-
-                    <!-- single course -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="course">
-                            <div class="course-img">
-                                <img src="./img/tea.png" alt="">
-                                <i class="course-link-icon fa fa-link"></i>
                             </div>
-                            <a class="course-title" href="#">Estrategias educativas para el alumno con TEA</a>
-                            <div class="course-details">
-                                <span class="course-category">Curso sincrónico online</span>
-                                <span class="course-price course-free">$(precio)</span>
+                        </div>
+
+                        <div class="row">
+                            <div class="d-flex justify-content-start align-items-center mb-2">
+
+                                <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
+                                    <i class="fas fa-envelope icon"></i>
+                                </div>
+
+                                <div class="ms-3 flex-grow-1">
+                                    <p class="text-muted m-0 ">contacto@progresscap.cl</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <!-- /single course -->
+                </div>
 
-                    <!-- single course -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="course">
-                            <a href="#" class="course-img">
-                                <img src="./img/alergia_alimentaria.png" alt="">
-                                <i class="course-link-icon fa fa-link"></i>
-                            </a>
-                            <a class="course-title" href="#">Alergias alimentarias</a>
-                            <div class="course-details">
-                                <span class="course-category">Curso asincrónico online</span>
-                                <span class="course-price course-free">$(precio)</span>
+                <!-- LINKS -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="h5 fw-normal mb-3 text-uppercase">Links</h5>
+                    <hr class="hr-light mb-lg-5 mb-4">
+
+                    <div class="links">
+                        <div class="row">
+                            <div class="col-1 text-center">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="col-11 "><a href="https://www.progresscap.cl/#inicio">Inicio</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 text-center">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="col-11 "><a href="https://www.progresscap.cl/#servicios">Servicios</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 text-center">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="col-11 "><a href="https://www.progresscap.cl/#especialistas">Especialistas</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 text-center">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="col-11 "><a href="https://www.progresscap.cl/#contacto">Contacto</a>
                             </div>
                         </div>
                     </div>
-                    <!-- /single course -->
-
-                    <!-- single course -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="course">
-                            <a href="#" class="course-img">
-                                <img src="./img/apraxia_infantil.png" alt="">
-                                <i class="course-link-icon fa fa-link"></i>
-                            </a>
-                            <a class="course-title" href="#">Apraxia del habla infantil</a>
-                            <div class="course-details">
-                                <span class="course-category">Curso sincrónico online</span>
-                                <span class="course-price course-free">$(precio)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single course -->
-
-
-                    <!-- /single course -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="course">
-                            <a href="#" class="course-img">
-                                <img src="./img/interaccion_digital.png" alt="">
-                                <i class="course-link-icon fa fa-link"></i>
-                            </a>
-                            <a class="course-title" href="#">Estrategias prácticas para la interacción digital</a>
-                            <div class="course-details">
-                                <span class="course-category">Curso sincrónico online</span>
-                                <span class="course-price course-free">$(precio)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single course -->
-
-                    <!-- /single course -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="course">
-                            <a href="#" class="course-img">
-                                <img src="./img/anatomofisiologia.png" alt="">
-                                <i class="course-link-icon fa fa-link"></i>
-                            </a>
-                            <a class="course-title" href="#">Anatomofisiología de la articulación</a>
-                            <div class="course-details">
-                                <span class="course-category">Curso sincrónico online</span>
-                                <span class="course-price course-free">$(precio)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single course -->
 
                 </div>
-                <!-- /row -->
 
-            </div>
-            <!-- /courses -->
+                <!-- REDES SOCIALES -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="h5 fw-normal mb-3 text-uppercase d-none d-lg-block">Redes
+                        Sociales</h5>
+                    <hr class="hr-light mb-lg-5 mb-4 d-none d-lg-block">
 
-            <!--<div class="row" style="margin-bottom: 80px;">
-                <div class="center-btn">
-                    <a class="main-button icon-button" href="#">Más cursos</a>
-                </div>
-            </div>-->
+                    <div class="d-flex justify-content-lg-start justify-content-xl-start justify-content-center justify-content-xs-center align-items-center">
 
-        </div>
-        <!-- container -->
-
-    </div>
-</section>
-<!-- /Courses -->
-
-<!-- Call To Action -->
-<div id="cta" class="section">
-
-    <!-- Backgound Image -->
-    <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.jpg)"></div>
-    <!-- /Backgound Image -->
-
-    <!-- container -->
-    <div class="container">
-
-        <!-- row -->
-        <div class="row" style="margin-top: 80px;margin-bottom: 80px;">
-
-            <div class="col-md-6">
-                <h2 class="white-text">(Cambiar text) Ceteros fuisset mei no, soleat epicurei adipiscing ne vis.
-                </h2>
-                <p class="lead white-text">(Cambiar texto) Ceteros fuisset mei no, soleat epicurei adipiscing ne
-                    vis. Et his suas
-                    veniam nominati.</p>
-                <a class="main-button icon-button" href="#">¡Comienza!</a>
-            </div>
-
-        </div>
-        <!-- /row -->
-
-    </div>
-    <!-- /container -->
-
-</div>
-<!-- /Call To Action -->
-
-<!-- Why us -->
-<div id="why-us" class="section">
-
-    <!-- container -->
-    <div class="container">
-
-        <!-- row -->
-        <div class="row" style="margin-top: 80px;margin-bottom: 80px;">
-            <div class="section-header text-center">
-                <h2>¿Por qué progress?</h2>
-                <p class="lead">(Cambiar texto) Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-            </div>
-
-            <!-- feature -->
-            <div class="col-md-4">
-                <div class="feature">
-                    <i class="feature-icon fa fa-flask"></i>
-                    <div class="feature-content">
-                        <h4>Cursos Online</h4>
-                        <p>(Cambiar texto) Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas
-                            veniam nominati.
-                        </p>
+                        <!-- IG -->
+                        <a
+                                class="btn btn-floating btn-lg m-1 text-white shadow-1-strong"
+                                href="https://www.instagram.com/cap.progress"
+                                rel="noopener noreferrer nofollow"
+                                role="button"
+                                style="background-color: #E1306C"
+                                target="_blank"
+                        ><i class="fab fa-instagram fa-lg"></i
+                            ></a>
                     </div>
                 </div>
-            </div>
-            <!-- /feature -->
-
-            <!-- feature -->
-            <div class="col-md-4">
-                <div class="feature">
-                    <i class="feature-icon fa fa-users"></i>
-                    <div class="feature-content">
-                        <h4>Profesores Expertos</h4>
-                        <p>(Cambiar texto) Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas
-                            veniam nominati.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- /feature -->
-
-            <!-- feature -->
-            <div class="col-md-4">
-                <div class="feature">
-                    <i class="feature-icon fa fa-comments"></i>
-                    <div class="feature-content">
-                        <h4>Comunidad</h4>
-                        <p>(Cambiar texto) Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas
-                            veniam nominati.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- /feature -->
-
-        </div>
-        <!-- /row -->
-        <!-- /row -->
-
-    </div>
-    <!-- /container -->
-
-</div>
-<!-- /Why us -->
-
-<!-- Contact CTA -->
-<!--
-<div id="contact-cta" class="section">
-    <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <h2 class="white-text">Contact Us</h2>
-                <p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-                <a class="main-button icon-button" href="#">Contact Us Now</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>-->
-
-<!-- Footer -->
-<footer id="footer" class="section">
-
-    <!-- container -->
-    <div class="container">
-
-        <!-- row -->
-        <div id="bottom-footer" class="row">
-
-            <!-- contact information -->
-            <div class="col-md-6">
-                <h4>Información de contacto</h4>
-                <ul class="contact-details">
-                    <li><i class="fa fa-envelope"></i>email@email.com</li>
-                    <li><i class="fa fa-phone"></i>numero telefono</li>
-                    <li><i class="fa fa-map-marker"></i>direccion</li>
-                </ul>
-
-            </div>
-
-            <!-- footer nav -->
-            <div class="col-md-6">
-                <ul class="footer-nav">
-                    <li><a href="https://www.progresscap.cl/">Inicio</a></li>
-                    <li><a href="https://www.progresscap.cl/#acerca">Acerca</a></li>
-                    <li><a href="https://www.progresscap.cl/#cursos">Cursos</a></li>
-                    <li><a href="https://www.progresscap.cl/#contacto">Contacto</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- copyright -->
-        <div class="col-md-9" style="margin-top: 40px;margin-bottom: 40px;">
-            <div class="footer-copyright">
-                Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear().toString());
-                </script>
-                Capacitaciones Progress
-                <span>
-						<p>Esta plantilla está hecha con
-							<i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com"
-                                                                                    target="_blank" rel="noopener">Colorlib</a>
-							y adaptada por <a href="https://figonzal.cl" target="_blank"
-                                              rel="noopener"><b>figonzal.cl</b></a>
-						</p>
-					</span>
 
             </div>
         </div>
-        <!-- /copyright -->
 
-        <!-- social -->
-        <div class="col-md-3" style="margin-top: 40px;margin-bottom: 60px;">
-            <ul class="footer-social">
-                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-            </ul>
+        <div class="text-center p-4 copyright text-white">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script async>
+                document.write(new Date().getFullYear().toString());
+            </script>
+            Capacitaciones Progress<br/>
+            <p class="my-0">Diseñado por <a class="fw-bold" href="https://www.figonzal.cl"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank">figonzal.cl</a></p>
         </div>
-        <!-- /social -->
-
-    </div>
-    <!-- /container -->
+    </section>
 
 </footer>
-<!-- /Footer -->
-
-<!-- preloader -->
-<div id='preloader'>
-    <div class='preloader'></div>
-</div>
-<!-- /preloader -->
 
 
-<!-- jQuery Plugins -->
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js" async></script>
+<!-- JQUERY -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" async>
+    $(window).scroll(function () {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 800);
+    });
+</script>
 
+<script src="js/modernizr-custom.js"></script>
+<script>
+    Modernizr.on('webp', function (result) {
+        if (result) {
+            // supported
+        } else {
+            // not-supported
+        }
+    });
+</script>
 </body>
-
 </html>
