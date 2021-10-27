@@ -136,8 +136,8 @@ header('Accept-Encoding: gzip, compress, br');
                 <!-- Left Icons -->
                 <div class="navbar-nav d-flex flex-row ms-auto">
                     <a href="https://www.moodle.progresscap.cl" rel="noopener noreferrer" target="_blank"
-                       class="nav-link ms-auto ms-md-0">Moodle</a>
-                    <a class="nav-link" href="https://www.instagram.com/cap.progress/"
+                       class="nav-link px-0">Moodle</a>
+                    <a class="nav-link px-0 ms-3" href="https://www.instagram.com/cap.progress/"
                        rel="noopener noreferrer" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
                 </div>
