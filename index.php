@@ -70,7 +70,7 @@ header('Accept-Encoding: gzip, compress, br');
         }
 
         .webp .carousel-item:nth-child(1) {
-            background-image: url('img/background2-min.jpg');
+            background-image: url('img/background2-min.webp');
         }
 
         .no-webp .carousel-item:nth-child(1) {
@@ -78,7 +78,7 @@ header('Accept-Encoding: gzip, compress, br');
         }
 
         .webp .carousel-item:nth-child(2) {
-            background-image: url('img/background2-min.jpg');
+            background-image: url('img/background2-min.webp');
         }
 
         .no-webp .carousel-item:nth-child(2) {
@@ -86,7 +86,7 @@ header('Accept-Encoding: gzip, compress, br');
         }
 
         .webp .carousel-item:nth-child(3) {
-            background-image: url('img/background2-min.jpg');
+            background-image: url('img/background2-min.webp');
         }
 
         .no-webp .carousel-item:nth-child(3) {
@@ -168,7 +168,7 @@ header('Accept-Encoding: gzip, compress, br');
             <div class="carousel-item active webp" data-mdb-interval="7000">
                 <div class="mask dark-bg w-100">
 
-                    <div class="d-flex align-items-center h-100">
+                    <div class="d-flex justify-content-center align-items-center h-100">
 
                         <div class="col-md-7 col-sm-12">
                             <div class="d-row text-center text-white px-5">
@@ -213,7 +213,7 @@ header('Accept-Encoding: gzip, compress, br');
             <div class="carousel-item webp" data-mdb-interval="7000">
                 <div class="mask dark-bg w-100">
 
-                    <div class="d-flex align-items-center h-100">
+                    <div class="d-flex justify-content-center align-items-center h-100">
 
                         <div class="col-md-7 col-sm-12">
                             <div class="d-row text-center text-white px-5">
@@ -234,22 +234,21 @@ header('Accept-Encoding: gzip, compress, br');
 
                             </div>
                         </div>
-                        <div class="col-md-5 col-sm-12 d-none d-md-block ">
+                        <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                             <picture>
-
-                                <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
                                 <source srcset="img/cursos/alergia_alimentaria-min.png" type="image/png">
+                                <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
 
                                 <img src="img/cursos/alergia_alimentaria-min.png"
                                      class="img-responsive rounded shadow-5-strong"
                                      height="500"
                                      loading="lazy"
-                                     alt="Alergia Alimentaria">
+                                     alt="Alergia Alergia Alimentaria">
                             </picture>
 
-
                         </div>
+
 
                     </div>
 
@@ -259,7 +258,7 @@ header('Accept-Encoding: gzip, compress, br');
             <div class="carousel-item webp" data-mdb-interval="7000">
                 <div class="mask dark-bg w-100">
 
-                    <div class=" d-flex align-items-center h-100">
+                    <div class=" d-flex justify-content-center align-items-center h-100">
 
                         <div class="col-md-7 col-sm-12">
                             <div class="d-row text-center text-white px-5">
