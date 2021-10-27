@@ -168,13 +168,14 @@ header('Accept-Encoding: gzip, compress, br');
             <div class="carousel-item active webp" data-mdb-interval="7000">
                 <div class="mask dark-bg w-100">
 
-                    <div class=" d-flex align-items-center h-100">
+                    <div class="d-flex align-items-center h-100">
 
-                        <div class="col-7">
-                            <div class="d-row text-center text-white">
+                        <div class="col-md-7 col-sm-12">
+                            <div class="d-row text-center text-white px-5">
                                 <h2 class="h1">Estrategias para la Interacción Digital</h2>
-                                <div class="mx-5 px-5">
-                                    <p class="px-5 pt-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <div class="mx-5 mb-4">
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
                                         Curabitur eget
                                         bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
                                         ut.
@@ -188,7 +189,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             </div>
                         </div>
-                        <div class="col-5">
+                        <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                             <picture>
                                 <source srcset="img/cursos/interaccion_digital-min.png" type="image/png">
@@ -212,13 +213,14 @@ header('Accept-Encoding: gzip, compress, br');
             <div class="carousel-item webp" data-mdb-interval="7000">
                 <div class="mask dark-bg w-100">
 
-                    <div class=" d-flex align-items-center h-100">
+                    <div class="d-flex align-items-center h-100">
 
-                        <div class="col-7">
-                            <div class="d-row text-center text-white">
+                        <div class="col-md-7 col-sm-12">
+                            <div class="d-row text-center text-white px-5">
                                 <h2 class="h1">Alergia Alimentaria</h2>
-                                <div class="mx-5 px-5">
-                                    <p class="px-5 pt-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <div class="mx-5 mb-4">
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
                                         Curabitur eget
                                         bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
                                         ut.
@@ -232,7 +234,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             </div>
                         </div>
-                        <div class="col-5 ">
+                        <div class="col-md-5 col-sm-12 d-none d-md-block ">
 
                             <picture>
 
@@ -249,7 +251,6 @@ header('Accept-Encoding: gzip, compress, br');
 
                         </div>
 
-
                     </div>
 
                 </div>
@@ -260,11 +261,12 @@ header('Accept-Encoding: gzip, compress, br');
 
                     <div class=" d-flex align-items-center h-100">
 
-                        <div class="col-7">
-                            <div class="d-row text-center text-white">
+                        <div class="col-md-7 col-sm-12">
+                            <div class="d-row text-center text-white px-5">
                                 <h2 class="h1">Estrategias Educativas para el alumno con TEA</h2>
-                                <div class="mx-5 px-5">
-                                    <p class="px-5 pt-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <div class="mx-5 mb-4">
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
                                         Curabitur eget
                                         bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
                                         ut.
@@ -278,7 +280,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             </div>
                         </div>
-                        <div class="col-5 ">
+                        <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                             <picture>
 
@@ -304,7 +306,7 @@ header('Accept-Encoding: gzip, compress, br');
 
         <div class="container mt-5 pt-5">
             <div class="row mb-5">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <h3 class="h1">Bienvenido a Progress</h3>
 
                     <h3 class="mt-5 fw-bold">Quienes Somos</h3>
@@ -339,7 +341,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <picture>
 
                         <source srcset="img/progress_logo_completo-min.webp" type="image/webp">
@@ -358,7 +360,7 @@ header('Accept-Encoding: gzip, compress, br');
         <div class="container mt-5 pt-5">
 
             <div class="row">
-                <div class="col-12 mb-5">
+                <div class="col-md-12 mb-5">
                     <div class="text-center">
                         <h3 class="h1">Explora nuestros cursos</h3>
                         <p class="h5 text-muted lead">(Cambiar texto) Libris vivendo eloquentiam ex ius, nec id
@@ -367,7 +369,7 @@ header('Accept-Encoding: gzip, compress, br');
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-md-12">
 
                     <!-- GRID SISTEM -->
                     <div class="row g-4">
