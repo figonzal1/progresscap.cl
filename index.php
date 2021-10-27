@@ -69,15 +69,27 @@ header('Accept-Encoding: gzip, compress, br');
             background-position: center center;
         }
 
-        .carousel-item:nth-child(1) {
+        .webp .carousel-item:nth-child(1) {
             background-image: url('img/background2-min.jpg');
         }
 
-        .carousel-item:nth-child(2) {
+        .no-webp .carousel-item:nth-child(1) {
             background-image: url('img/background2-min.jpg');
         }
 
-        .carousel-item:nth-child(3) {
+        .webp .carousel-item:nth-child(2) {
+            background-image: url('img/background2-min.jpg');
+        }
+
+        .no-webp .carousel-item:nth-child(2) {
+            background-image: url('img/background2-min.jpg');
+        }
+
+        .webp .carousel-item:nth-child(3) {
+            background-image: url('img/background2-min.jpg');
+        }
+
+        .no-webp .carousel-item:nth-child(3) {
             background-image: url('img/background2-min.jpg');
         }
 
@@ -91,7 +103,13 @@ header('Accept-Encoding: gzip, compress, br');
         <div class="container">
             <a class="navbar-brand" href="https://www.progresscap.cl">
 
-                <img src="img/progress_logo_completo-min.jpg" height="60" alt="Progress Cap Logo" loading="lazy">
+                <picture>
+
+                    <source srcset="img/progress_logo_completo-min.webp" type="image/webp">
+                    <source srcset="img/progress_logo_completo-min.jpg" type="image/jpeg">
+                    <img src="img/progress_logo_completo-min.jpg" height="60" alt="Progress Cap Logo" loading="lazy">
+                </picture>
+
 
             </a>
             <button
@@ -171,11 +189,18 @@ header('Accept-Encoding: gzip, compress, br');
                             </div>
                         </div>
                         <div class="col-5">
-                            <img src="img/cursos/interaccion_digital-min.png"
-                                 class="img-responsive rounded shadow-5-strong"
-                                 height="500"
-                                 loading="lazy"
-                                 alt="Interaccion Digital">
+
+                            <picture>
+                                <source srcset="img/cursos/interaccion_digital-min.png" type="image/png">
+                                <source srcset="img/cursos/interaccion_digital-min.webp" type="image/webp">
+
+                                <img src="img/cursos/interaccion_digital-min.png"
+                                     class="img-responsive rounded shadow-5-strong"
+                                     height="500"
+                                     loading="lazy"
+                                     alt="Interaccion Digital">
+                            </picture>
+
                         </div>
 
 
@@ -208,11 +233,20 @@ header('Accept-Encoding: gzip, compress, br');
                             </div>
                         </div>
                         <div class="col-5 ">
-                            <img src="img/cursos/alergia_alimentaria-min.png"
-                                 class="img-responsive rounded shadow-5-strong"
-                                 height="500"
-                                 loading="lazy"
-                                 alt="Alergia Alimentaria">
+
+                            <picture>
+
+                                <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
+                                <source srcset="img/cursos/alergia_alimentaria-min.png" type="image/png">
+
+                                <img src="img/cursos/alergia_alimentaria-min.png"
+                                     class="img-responsive rounded shadow-5-strong"
+                                     height="500"
+                                     loading="lazy"
+                                     alt="Alergia Alimentaria">
+                            </picture>
+
+
                         </div>
 
 
@@ -245,10 +279,16 @@ header('Accept-Encoding: gzip, compress, br');
                             </div>
                         </div>
                         <div class="col-5 ">
-                            <img src="img/cursos/tea-min.png" class="img-responsive rounded shadow-5-strong"
-                                 height="500"
-                                 loading="lazy"
-                                 alt="Transtorno Espectro Autista">
+
+                            <picture>
+
+                                <source srcset="img/cursos/tea-min.webp" type="image/webp">
+                                <source srcset="img/cursos/tea-min.png" type="image/png">
+                                <img src="img/cursos/tea-min.png" class="img-responsive rounded shadow-5-strong"
+                                     height="500"
+                                     loading="lazy"
+                                     alt="Transtorno Espectro Autista">
+                            </picture>
                         </div>
 
 
@@ -300,8 +340,13 @@ header('Accept-Encoding: gzip, compress, br');
                     </div>
                 </div>
                 <div class="col-6">
-                    <img class="img-fluid" src="/img/progress_logo_completo-min.jpg" alt="ProgressCap Logo"
-                         loading="lazy">
+                    <picture>
+
+                        <source srcset="img/progress_logo_completo-min.webp" type="image/webp">
+                        <source srcset="img/progress_logo_completo-min.jpg" type="image/jpg">
+                        <img class="img-fluid" src="/img/progress_logo_completo-min.jpg" alt="ProgressCap Logo"
+                             loading="lazy">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -330,12 +375,20 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="col-md-4">
                             <div class="card h-100">
                                 <div class="bg-image hover-overlay hover-zoom">
-                                    <img
-                                            src="img/cursos/apraxia_infantil-min.png"
-                                            class="card-img-top"
-                                            alt="Apraxia Infantil"
-                                            loading="lazy"
-                                    />
+
+                                    <picture>
+
+                                        <source srcset="img/cursos/apraxia_infantil-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/apraxia_infantil-min.png" type="image/png">
+
+                                        <img
+                                                src="img/cursos/apraxia_infantil-min.png"
+                                                class="card-img-top"
+                                                alt="Apraxia Infantil"
+                                                loading="lazy"
+                                        />
+                                    </picture>
+
                                     <div class="mask ">
                                         <a href="#">
                                             <div class="d-flex align-items-center justify-content-center h-100">
@@ -377,12 +430,19 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="col-md-4">
                             <div class="card h-100">
                                 <div class="bg-image hover-overlay hover-zoom">
-                                    <img
-                                            src="img/cursos/anatomofisiologia-min.png"
-                                            class="card-img-top"
-                                            alt="Anatomofisiologia"
-                                            loading="lazy"
-                                    />
+
+                                    <picture>
+
+                                        <source srcset="img/cursos/anatomofisiologia-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/anatomofisiologia-min.png" type="image/png">
+                                        <img
+                                                src="img/cursos/anatomofisiologia-min.png"
+                                                class="card-img-top"
+                                                alt="Anatomofisiologia"
+                                                loading="lazy"
+                                        />
+                                    </picture>
+
                                     <div class="mask ">
                                         <a href="#">
                                             <div class="d-flex align-items-center justify-content-center h-100">
@@ -418,12 +478,18 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="col-md-4">
                             <div class="card h-100">
                                 <div class="bg-image hover-overlay hover-zoom">
-                                    <img
-                                            src="img/cursos/alergia_alimentaria-min.png"
-                                            class="card-img-top"
-                                            alt="Alergia Alimentaria"
-                                            loading="lazy"
-                                    />
+
+                                    <picture>
+
+                                        <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/alergia_alimentaria-min.png" type="image/png">
+                                        <img
+                                                src="img/cursos/alergia_alimentaria-min.png"
+                                                class="card-img-top"
+                                                alt="Alergia Alimentaria"
+                                                loading="lazy"
+                                        />
+                                    </picture>
                                     <div class="mask ">
                                         <a href="#">
                                             <div class="d-flex align-items-center justify-content-center h-100">
@@ -463,12 +529,19 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="col-md-4">
                             <div class="card h-100">
                                 <div class="bg-image hover-overlay hover-zoom">
-                                    <img
-                                            src="img/cursos/interaccion_digital-min.png"
-                                            class="card-img-top"
-                                            alt="Curso Interacción Digital"
-                                            loading="lazy"
-                                    />
+
+                                    <picture>
+
+                                        <source srcset="img/cursos/interaccion_digital-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/interaccion_digital-min.png" type="image/png">
+                                        <img
+                                                src="img/cursos/interaccion_digital-min.png"
+                                                class="card-img-top"
+                                                alt="Curso Interacción Digital"
+                                                loading="lazy"
+                                        />
+                                    </picture>
+
                                     <div class="mask ">
                                         <a href="#">
                                             <div class="d-flex align-items-center justify-content-center h-100">
@@ -503,12 +576,18 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="col-md-4">
                             <div class="card h-100">
                                 <div class="bg-image hover-overlay hover-zoom">
-                                    <img
-                                            src="img/cursos/tea-min.png"
-                                            class="card-img-top"
-                                            alt="Curso TEA"
-                                            loading="lazy"
-                                    />
+
+                                    <picture>
+
+                                        <source srcset="img/cursos/tea-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/tea-min.png" type="image/png">
+                                        <img
+                                                src="img/cursos/tea-min.png"
+                                                class="card-img-top"
+                                                alt="Curso TEA"
+                                                loading="lazy"
+                                        />
+                                    </picture>
                                     <div class="mask">
                                         <a href="#">
                                             <div class="d-flex align-items-center justify-content-center h-100">
