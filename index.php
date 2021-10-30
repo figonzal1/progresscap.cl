@@ -3,7 +3,7 @@ header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header("X-XSS-Protection: 1; mode=block");
 header("Referrer-Policy: strict-origin-when-cross-origin");
-header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://use.fontawesome.com https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://use.fontawesome.com");
+header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://use.fontawesome.com https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://use.fontawesome.com/");
 header("Permissions-Policy: fullscreen=(), geolocation=(), camera=(), microphone=()");
 header('Accept-Encoding: gzip, compress, br');
 ?>
@@ -129,7 +129,32 @@ header('Accept-Encoding: gzip, compress, br');
                 <div class="navbar-nav navbar-nav-scroll">
                     <a href="#" aria-current="page" class="nav-link active">Inicio</a>
                     <a href="#" aria-current="page" class="nav-link">Nosotros</a>
-                    <a href="#" aria-current="page" class="nav-link">Cursos</a>
+                    <div class="dropdown">
+                        <a href="#"
+                           role="button"
+                           id="dropdownMenuLink"
+                           data-mdb-toggle="dropdown"
+                           aria-expanded="false"
+                           class="nav-link dropdown-toggle">Cursos</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><h6 class="dropdown-header">Área Salud</h6></li>
+                            <li><a class="dropdown-item" href="#">Apraxia del Habla Infantil</a></li>
+                            <li><a class="dropdown-item" href="#">Anatomofisiología de la Articulación</a></li>
+                            <li><a class="dropdown-item" href="#">Alergia Alimentaria</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider"/>
+                            </li>
+
+                            <li><h6 class="dropdown-header">Área Educación</h6></li>
+                            <li><a class="dropdown-item" href="#">Interacción Digital</a></li>
+                            <li><a class="dropdown-item" href="#">Estrategias Educativas TEA</a></li>
+
+
+                        </ul>
+                    </div>
+
                     <a href="#" aria-current="page" class="nav-link">Contacto</a>
                 </div>
 
@@ -334,8 +359,8 @@ header('Accept-Encoding: gzip, compress, br');
                         </div>
 
                         <div class="ms-4 flex-grow-1">
-                            <h4 class="h4 mb-3">Cursos Online</h4>
-                            <p class="text-muted lead">Ofrecemos cursos sincrónicos y asincrónico</p>
+                            <h4 class="h4 mb-3">(Agregar otra caracteristica))</h4>
+                            <p class="text-muted lead">(describir caracteristica)</p>
                         </div>
 
                     </div>
@@ -356,15 +381,14 @@ header('Accept-Encoding: gzip, compress, br');
 
     <section id="Cursos">
 
-        <div class="container mt-5 pt-5">
+        <div class="container my-5 py-5">
 
             <div class="row">
                 <div class="col-md-12 mb-5">
                     <div class="text-center">
                         <h3 class="h1">Explora nuestros cursos</h3>
-                        <p class="h5 text-muted lead">(Cambiar texto) Libris vivendo eloquentiam ex ius, nec id
-                            splendide
-                            abhorreant.</p>
+                        <p class="h5 text-muted lead">Ofrecemos cursos tanto para profesionales del área de salud como
+                            para profesionales del área de la educación</p>
                     </div>
                 </div>
 
@@ -403,8 +427,8 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Apraxia del Habla Infantil</h5>
-                                    <p class="card-text lead">
+                                    <h5 class="card-title fw-bolder">Apraxia del Habla Infantil</h5>
+                                    <p class="card-text text-muted lead">
                                         (Agregar descripcion del curso de apraxia infantil)
                                     </p>
                                     <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
@@ -457,8 +481,8 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Anatomofisiología de la Articulación</h5>
-                                    <p class="card-text lead">
+                                    <h5 class="card-title fw-bold">Anatomofisiología de la Articulación</h5>
+                                    <p class="card-text text-muted lead">
                                         (Agregar descripcion del curso de anatomofisiología)
                                     </p>
 
@@ -504,7 +528,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Alergia Alimentaria</h5>
+                                    <h5 class="card-title fw-bold">Alergia Alimentaria</h5>
                                     <p class="card-text text-muted lead">El curso online de Alergias alimentarias es
                                         dictado
                                         por
@@ -556,7 +580,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Interacción digital</h5>
+                                    <h5 class="card-title fw-bold">Interacción digital</h5>
                                     <p class="card-text text-muted lead">(Agregar descripción del curso de interacción
                                         digital)</p>
 
@@ -602,7 +626,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Estrategias Educativas TEA</h5>
+                                    <h5 class="card-title fw-bold">Estrategias Educativas TEA</h5>
                                     <p class="card-text text-muted lead">(Agregar descripción del curso de estrategias
                                         educativas)</p>
 
@@ -621,6 +645,19 @@ header('Accept-Encoding: gzip, compress, br');
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certificados">
+        <div class="container-fluid mt-5 py-5 certificados">
+            <div class="row text-center">
+                <h1 class="h2 mb-5">Certifica</h1>
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <img src="img/iCONTEC.png" class="img-responsive rounded mx-5" height="180" alt="IconTec">
+                    <img src="img/otec_sence.jpg" class="img-responsive rounded mx-5" height="180" alt="SENCE Otec">
                 </div>
             </div>
 
@@ -658,11 +695,25 @@ header('Accept-Encoding: gzip, compress, br');
                             <div class="d-flex justify-content-start align-items-center mb-2">
 
                                 <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
+                                    <i class="fas fa-phone-alt icon"></i>
+                                </div>
+
+                                <div class="ms-3 flex-grow-1">
+                                    <p class="text-muted m-0 ">+569 56876165</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="d-flex justify-content-start align-items-center mb-2">
+
+                                <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
                                     <i class="fas fa-envelope icon"></i>
                                 </div>
 
                                 <div class="ms-3 flex-grow-1">
-                                    <p class="text-muted m-0 ">contacto@progresscap.cl</p>
+                                    <p class="text-muted m-0 ">capacitaciones.progress@gmail.com</p>
                                 </div>
 
                             </div>
@@ -738,7 +789,8 @@ header('Accept-Encoding: gzip, compress, br');
             <script async>
                 document.write(new Date().getFullYear().toString());
             </script>
-            Capacitaciones Progress<br/>
+            López & Eguiluz LTDA<br/>
+            INN: A-9854 <br/>
             <p class="my-0">Diseñado por <a class="fw-bold" href="https://www.figonzal.cl"
                                             rel="noopener noreferrer nofollow"
                                             target="_blank">figonzal.cl</a></p>
