@@ -127,10 +127,10 @@ header('Accept-Encoding: gzip, compress, br');
             <!-- RIGH MENU -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav navbar-nav-scroll">
-                    <a href="#" aria-current="page" class="nav-link active">Inicio</a>
-                    <a href="#" aria-current="page" class="nav-link">Nosotros</a>
+                    <a href="https://www.progresscap.cl/#inicio" aria-current="page" class="nav-link active">Inicio</a>
+                    <a href="https://www.progresscap.cl/#acerca" aria-current="page" class="nav-link">Acerca</a>
                     <div class="dropdown">
-                        <a href="#"
+                        <a href="https://www.progresscap.cl/#cursos"
                            role="button"
                            id="dropdownMenuLink"
                            data-mdb-toggle="dropdown"
@@ -155,7 +155,7 @@ header('Accept-Encoding: gzip, compress, br');
                         </ul>
                     </div>
 
-                    <a href="#" aria-current="page" class="nav-link">Contacto</a>
+                    <a href="https://www.progresscap.cl/#contacto" aria-current="page" class="nav-link">Contacto</a>
                 </div>
 
                 <!-- Left Icons -->
@@ -190,7 +190,45 @@ header('Accept-Encoding: gzip, compress, br');
         <!-- Imagenes -->
         <div class="carousel-inner">
 
-            <div class="carousel-item active webp" data-mdb-interval="7000">
+            <div class="carousel-item active webp" data-mdb-interval="15000">
+                <div class="mask dark-bg w-100">
+
+                    <div class="d-flex justify-content-center align-items-center h-100">
+
+                        <div class="col-md-7 col-sm-12">
+                            <div class="d-row text-center text-white px-5">
+                                <h2 class="h1">Alergia Alimentaria</h2>
+                                <div class="mx-5 mb-4">
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">El curso online de Alergias alimentarias
+                                        es dictado por profesionales de la salud y orientado a profesionales de la salud
+                                        afines que se desempeñen en el área de alimentación.</p>
+                                </div>
+                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 d-none d-md-block">
+
+                            <picture>
+                                <source srcset="img/cursos/alergia_alimentaria-min.png" type="image/png">
+                                <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
+
+                                <img src="img/cursos/alergia_alimentaria-min.png"
+                                     class="img-responsive rounded shadow-5-strong"
+                                     height="500"
+                                     loading="lazy"
+                                     alt="Alergia Alergia Alimentaria">
+                            </picture>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item webp" data-mdb-interval="15000">
                 <div class="mask dark-bg w-100">
 
                     <div class="d-flex justify-content-center align-items-center h-100">
@@ -235,52 +273,7 @@ header('Accept-Encoding: gzip, compress, br');
                 </div>
             </div>
 
-            <div class="carousel-item webp" data-mdb-interval="7000">
-                <div class="mask dark-bg w-100">
-
-                    <div class="d-flex justify-content-center align-items-center h-100">
-
-                        <div class="col-md-7 col-sm-12">
-                            <div class="d-row text-center text-white px-5">
-                                <h2 class="h1">Alergia Alimentaria</h2>
-                                <div class="mx-5 mb-4">
-                                    <p class="px-5 pt-3 lead d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit.
-                                        Curabitur eget
-                                        bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
-                                        ut.
-                                        Mauris laoreet metus ut odio dictum, ut aliquam massa pretium. Mauris at lorem
-                                        in
-                                        lorem dictum euismod. Sed vitae nibh ut tortor ornare cursus. Interdum et
-                                        malesuada
-                                        fames a</p>
-                                </div>
-                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
-
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12 d-none d-md-block">
-
-                            <picture>
-                                <source srcset="img/cursos/alergia_alimentaria-min.png" type="image/png">
-                                <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
-
-                                <img src="img/cursos/alergia_alimentaria-min.png"
-                                     class="img-responsive rounded shadow-5-strong"
-                                     height="500"
-                                     loading="lazy"
-                                     alt="Alergia Alergia Alimentaria">
-                            </picture>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="carousel-item webp" data-mdb-interval="7000">
+            <div class="carousel-item webp" data-mdb-interval="15000">
                 <div class="mask dark-bg w-100">
 
                     <div class=" d-flex justify-content-center align-items-center h-100">
@@ -289,16 +282,10 @@ header('Accept-Encoding: gzip, compress, br');
                             <div class="d-row text-center text-white px-5">
                                 <h2 class="h1">Estrategias Educativas para el alumno con TEA</h2>
                                 <div class="mx-5 mb-4">
-                                    <p class="px-5 pt-3 lead d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit.
-                                        Curabitur eget
-                                        bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
-                                        ut.
-                                        Mauris laoreet metus ut odio dictum, ut aliquam massa pretium. Mauris at lorem
-                                        in
-                                        lorem dictum euismod. Sed vitae nibh ut tortor ornare cursus. Interdum et
-                                        malesuada
-                                        fames a</p>
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">El diagnóstico de Trastrorno del
+                                        Espectro Autista ha incrementado en el último tiempo, debido a la constante
+                                        percepción de los profesionales de la salud y educación, así como también el
+                                        diagnóstico precoz, que permite con ello una intervención precoz.</p>
                                 </div>
                                 <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
 
@@ -326,7 +313,7 @@ header('Accept-Encoding: gzip, compress, br');
         </div>
     </div>
 
-    <section id="Acerca">
+    <section id="acerca">
 
         <div class="container mt-5 pt-5">
             <div class="row mb-5">
@@ -337,7 +324,7 @@ header('Accept-Encoding: gzip, compress, br');
                     <p class="text-muted mb-5 lead">Somos un <b>Organismo Técnico de Capaticatión</b> (OTEC) enfocado en
                         la
                         capacitación de
-                        profesionales de las áreas de salud y educación</p>
+                        profesionales de las áreas de salud y educación.</p>
 
                     <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
 
@@ -346,8 +333,8 @@ header('Accept-Encoding: gzip, compress, br');
                         </div>
 
                         <div class="ms-4 flex-grow-1">
-                            <h4 class="h4 mb-3">Cursos Online</h4>
-                            <p class="text-muted lead">Ofrecemos cursos sincrónicos y asincrónico</p>
+                            <h4 class="h4 mb-3 fw-bold">Cursos Online</h4>
+                            <p class="text-muted lead">Ofrecemos dos tipos de cursos: sincrónicos y asincrónicos.</p>
                         </div>
 
                     </div>
@@ -355,12 +342,26 @@ header('Accept-Encoding: gzip, compress, br');
                     <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
 
                         <div class="icon-background-lg d-flex justify-content-center align-items-center flex-shrink-0">
-                            <i class="fas fa-chalkboard-teacher fa-2x icon"></i>
+                            <i class="fas fa-award fa-2x icon"></i>
                         </div>
 
                         <div class="ms-4 flex-grow-1">
-                            <h4 class="h4 mb-3">(Agregar otra caracteristica))</h4>
-                            <p class="text-muted lead">(describir caracteristica)</p>
+                            <h4 class="h4 mb-3 fw-bold">Cursos certificados</h4>
+                            <p class="text-muted lead">Nuestros cursos cuentan con certificación OTEC.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
+
+                        <div class="icon-background-lg d-flex justify-content-center align-items-center flex-shrink-0">
+                            <i class="fas fa-stopwatch fa-2x icon"></i>
+                        </div>
+
+                        <div class="ms-4 flex-grow-1">
+                            <h4 class="h4 mb-3 fw-bold">Horas de formación</h4>
+                            <p class="text-muted lead">Más de 50 horas de formación académica en cada uno de nuestros
+                                cursos.</p>
                         </div>
 
                     </div>
@@ -378,8 +379,7 @@ header('Accept-Encoding: gzip, compress, br');
         </div>
     </section>
 
-
-    <section id="Cursos">
+    <section id="cursos">
 
         <div class="container my-5 py-5">
 
@@ -437,9 +437,9 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
                                         <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">
-                                            <del class="old-price">$150.000</del>
-                                            $80.000
+                                        <h5 class="h5 text-muted ms-auto ">
+                                            <del class="old-price d-none">$150.000</del>
+                                            $XX.XX
                                         </h5>
                                     </div>
                                     <div class="d-flex d-none">
@@ -492,7 +492,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
                                         <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
                                     </div>
 
                                 </div>
@@ -541,7 +541,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
                                         <h5 class="h5 text-muted">Asincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
                                     </div>
 
                                 </div>
@@ -590,7 +590,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
                                         <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
                                     </div>
 
                                 </div>
@@ -627,8 +627,10 @@ header('Accept-Encoding: gzip, compress, br');
                                 </div>
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold">Estrategias Educativas TEA</h5>
-                                    <p class="card-text text-muted lead">(Agregar descripción del curso de estrategias
-                                        educativas)</p>
+                                    <p class="card-text text-muted lead">El diagnóstico de Trastrorno del Espectro
+                                        Autista ha incrementado en el último tiempo, debido a la constante percepción
+                                        de los profesionales de la salud y educación, así como también el
+                                        diagnóstico precoz, que permite con ello una intervención precoz.</p>
 
                                     <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
                                 </div>
@@ -636,7 +638,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
                                         <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$150.000</h5>
+                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
                                     </div>
 
                                 </div>
@@ -738,14 +740,14 @@ header('Accept-Encoding: gzip, compress, br');
                             <div class="col-1 text-center">
                                 <i class="fas fa-arrow-right"></i>
                             </div>
-                            <div class="col-11 "><a href="https://www.progresscap.cl/#servicios">Servicios</a>
+                            <div class="col-11 "><a href="https://www.progresscap.cl/#acerca">Acerca</a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-1 text-center">
                                 <i class="fas fa-arrow-right"></i>
                             </div>
-                            <div class="col-11 "><a href="https://www.progresscap.cl/#especialistas">Especialistas</a>
+                            <div class="col-11 "><a href="https://www.progresscap.cl/#cursos">Cursos</a>
                             </div>
                         </div>
                         <div class="row">
