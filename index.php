@@ -61,35 +61,11 @@ header('Accept-Encoding: gzip, compress, br');
             height: 100vh;
         }
 
-        .carousel-item:nth-child(1),
-        .carousel-item:nth-child(2),
-        .carousel-item:nth-child(3) {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-
-        .webp .carousel-item:nth-child(1) {
+        .webp {
             background-image: url('img/background2-min.webp');
         }
 
-        .no-webp .carousel-item:nth-child(1) {
-            background-image: url('img/background2-min.jpg');
-        }
-
-        .webp .carousel-item:nth-child(2) {
-            background-image: url('img/background2-min.webp');
-        }
-
-        .no-webp .carousel-item:nth-child(2) {
-            background-image: url('img/background2-min.jpg');
-        }
-
-        .webp .carousel-item:nth-child(3) {
-            background-image: url('img/background2-min.webp');
-        }
-
-        .no-webp .carousel-item:nth-child(3) {
+        .no-webp {
             background-image: url('img/background2-min.jpg');
         }
 
@@ -178,7 +154,7 @@ header('Accept-Encoding: gzip, compress, br');
 
     <!-- Background Image -->
     <!-- Carrousel -->
-    <div class="carousel slide  shadow-2-strong" data-mdb-ride="carousel" id="introCarousel">
+    <div class="carousel slide shadow-2-strong webp" data-mdb-ride="carousel" id="introCarousel">
 
         <!-- Indicadores -->
         <ol class="carousel-indicators">
@@ -190,7 +166,7 @@ header('Accept-Encoding: gzip, compress, br');
         <!-- Imagenes -->
         <div class="carousel-inner">
 
-            <div class="carousel-item active webp" data-mdb-interval="15000">
+            <div class="carousel-item active" data-mdb-interval="15000">
                 <div class="mask dark-bg w-100">
 
                     <div class="d-flex justify-content-center align-items-center h-100">
@@ -228,7 +204,7 @@ header('Accept-Encoding: gzip, compress, br');
                 </div>
             </div>
 
-            <div class="carousel-item webp" data-mdb-interval="15000">
+            <div class="carousel-item" data-mdb-interval="15000">
                 <div class="mask dark-bg w-100">
 
                     <div class="d-flex justify-content-center align-items-center h-100">
@@ -273,7 +249,7 @@ header('Accept-Encoding: gzip, compress, br');
                 </div>
             </div>
 
-            <div class="carousel-item webp" data-mdb-interval="15000">
+            <div class="carousel-item" data-mdb-interval="15000">
                 <div class="mask dark-bg w-100">
 
                     <div class=" d-flex justify-content-center align-items-center h-100">
