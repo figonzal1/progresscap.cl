@@ -16,6 +16,8 @@ header('Accept-Encoding: gzip, compress, br');
 
     <title>Capacitaciones Progress</title>
     <meta name="description" content="Capacitaciones progress"/>
+    <!-- BING -->
+    <meta name="msvalidate.01" content="2A85F96AE86AC763C3A8DA5D21CE03B2"/>
     <link rel="canonical" href="https://www.progresscap.cl/"/>
 
     <!-- FAVICON -->
