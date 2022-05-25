@@ -85,6 +85,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                     <source srcset="img/progress_logo_completo-min.webp" type="image/webp">
                     <source srcset="img/progress_logo_completo-min.jpg" type="image/jpeg">
+                    <!--suppress CheckImageSize -->
                     <img src="img/progress_logo_completo-min.jpg" height="60" alt="Progress Cap Logo" loading="lazy">
                 </picture>
 
@@ -116,19 +117,18 @@ header('Accept-Encoding: gzip, compress, br');
                            class="nav-link dropdown-toggle">Cursos</a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><h6 class="dropdown-header">Área Salud</h6></li>
-                            <li><a class="dropdown-item" href="#">Apraxia del Habla Infantil</a></li>
-                            <li><a class="dropdown-item" href="#">Anatomofisiología de la Articulación</a></li>
-                            <li><a class="dropdown-item" href="#">Alergia Alimentaria</a></li>
-
                             <li>
-                                <hr class="dropdown-divider"/>
+                                <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Método BLW y
+                                    BLISS</a>
                             </li>
-
-                            <li><h6 class="dropdown-header">Área Educación</h6></li>
-                            <li><a class="dropdown-item" href="#">Interacción Digital</a></li>
-                            <li><a class="dropdown-item" href="#">Estrategias Educativas TEA</a></li>
-
+                            <li>
+                                <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Rechazo alimentario
+                                    IV</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Trastorno del
+                                    Espectro Autista</a>
+                            </li>
 
                         </ul>
                     </div>
@@ -175,27 +175,30 @@ header('Accept-Encoding: gzip, compress, br');
 
                         <div class="col-md-7 col-sm-12">
                             <div class="d-row text-center text-white px-5">
-                                <h2 class="h1">Alergia Alimentaria</h2>
+                                <h2 class="h1">Trastorno del Espectro Autista</h2>
                                 <div class="mx-5 mb-4">
-                                    <p class="px-5 pt-3 lead d-none d-sm-block">El curso online de Alergias alimentarias
-                                        es dictado por profesionales de la salud y orientado a profesionales de la salud
-                                        afines que se desempeñen en el área de alimentación.</p>
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">Curso online, que tiene como objetivo:
+                                        comprender, actualizar conocimiento,
+                                        conocer nuevas formas de intervención y aprender a evaluar y elaborar informes
+                                        de evaluación y seguimiento.</p>
                                 </div>
-                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
+                                <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
+                                    curso</a>
 
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                             <picture>
-                                <source srcset="img/cursos/alergia_alimentaria-min.png" type="image/png">
-                                <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
+                                <source srcset="img/cursos/autista-min.png" type="image/png">
+                                <source srcset="img/cursos/autista-min.webp" type="image/webp">
 
-                                <img src="img/cursos/alergia_alimentaria-min.png"
+                                <!--suppress CheckImageSize -->
+                                <img src="img/cursos/autista-min.png"
                                      class="img-responsive rounded shadow-5-strong"
-                                     height="500"
+                                     height="650"
                                      loading="lazy"
-                                     alt="Alergia Alergia Alimentaria">
+                                     alt="Trastorno del Espectro Autista">
                             </picture>
 
                         </div>
@@ -213,34 +216,31 @@ header('Accept-Encoding: gzip, compress, br');
 
                         <div class="col-md-7 col-sm-12">
                             <div class="d-row text-center text-white px-5">
-                                <h2 class="h1">Estrategias para la Interacción Digital</h2>
+                                <h2 class="h1">Rechazo Alimentario IV</h2>
                                 <div class="mx-5 mb-4">
-                                    <p class="px-5 pt-3 lead d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit.
-                                        Curabitur eget
-                                        bibendum neque. Quisque pharetra neque nisi, quis malesuada nisi pellentesque
-                                        ut.
-                                        Mauris laoreet metus ut odio dictum, ut aliquam massa pretium. Mauris at lorem
-                                        in
-                                        lorem dictum euismod. Sed vitae nibh ut tortor ornare cursus. Interdum et
-                                        malesuada
-                                        fames a</p>
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">
+                                        Curso online, dictado por profesionales de la salud y orientado a profesionales
+                                        de la salud que se desempeñen en el área pediátrica. O estudiantes de carreras
+                                        del área de salud.
+                                    </p>
                                 </div>
-                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
+                                <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
+                                    curso</a>
 
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                             <picture>
-                                <source srcset="img/cursos/interaccion_digital-min.png" type="image/png">
-                                <source srcset="img/cursos/interaccion_digital-min.webp" type="image/webp">
+                                <source srcset="img/cursos/rechazo_iv-min.png" type="image/png">
+                                <source srcset="img/cursos/rechazo_iv-min.webp" type="image/webp">
 
-                                <img src="img/cursos/interaccion_digital-min.png"
+                                <!--suppress CheckImageSize -->
+                                <img src="img/cursos/rechazo_iv-min.png"
                                      class="img-responsive rounded shadow-5-strong"
-                                     height="500"
+                                     height="650"
                                      loading="lazy"
-                                     alt="Interaccion Digital">
+                                     alt="Rechazo Alimentario IV">
                             </picture>
 
                         </div>
@@ -258,14 +258,16 @@ header('Accept-Encoding: gzip, compress, br');
 
                         <div class="col-md-7 col-sm-12">
                             <div class="d-row text-center text-white px-5">
-                                <h2 class="h1">Estrategias Educativas para el alumno con TEA</h2>
+                                <h2 class="h1">Método BLW y BLISS</h2>
                                 <div class="mx-5 mb-4">
-                                    <p class="px-5 pt-3 lead d-none d-sm-block">El diagnóstico de Trastrorno del
-                                        Espectro Autista ha incrementado en el último tiempo, debido a la constante
-                                        percepción de los profesionales de la salud y educación, así como también el
-                                        diagnóstico precoz, que permite con ello una intervención precoz.</p>
+                                    <p class="px-5 pt-3 lead d-none d-sm-block">
+                                        Curso online, dictado por profesionales de la salud y orientado a profesionales
+                                        de la salud afines que se desempeñen en el área pediátrica.
+                                    </p>
                                 </div>
-                                <button class="btn btn-lg btn-secondary mt-auto">Ver curso</button>
+
+                                <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
+                                    curso</a>
 
                             </div>
                         </div>
@@ -273,12 +275,13 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <picture>
 
-                                <source srcset="img/cursos/tea-min.webp" type="image/webp">
-                                <source srcset="img/cursos/tea-min.png" type="image/png">
-                                <img src="img/cursos/tea-min.png" class="img-responsive rounded shadow-5-strong"
-                                     height="500"
+                                <source srcset="img/cursos/blw_blis-min.png" type="image/webp">
+                                <source srcset="img/cursos/blw_blis-min.webp" type="image/png">
+
+                                <img src="img/cursos/blw_blis-min.webp" class="img-responsive rounded shadow-5-strong"
+                                     height="650"
                                      loading="lazy"
-                                     alt="Transtorno Espectro Autista">
+                                     alt="Metodo BLW y BLISS">
                             </picture>
                         </div>
 
@@ -381,19 +384,20 @@ header('Accept-Encoding: gzip, compress, br');
 
                                     <picture>
 
-                                        <source srcset="img/cursos/apraxia_infantil-min.webp" type="image/webp">
-                                        <source srcset="img/cursos/apraxia_infantil-min.png" type="image/png">
+                                        <source srcset="img/cursos/blw_blis-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/blw_blis-min.png" type="image/png">
 
                                         <img
-                                                src="img/cursos/apraxia_infantil-min.png"
+                                                src="img/cursos/blw_blis-min.png"
                                                 class="card-img-top"
-                                                alt="Apraxia Infantil"
+                                                alt="Método BLW y BLISS"
                                                 loading="lazy"
                                         />
                                     </picture>
 
                                     <div class="mask ">
-                                        <a href="#">
+                                        <a href="https://drive.google.com/file/d/10FF3DWU3bJ37FQSBS1Ci70KIbwIM7MpU/view?usp=drivesdk"
+                                           target="_blank" rel="noopener noreferrer nofollow">
                                             <div class="d-flex align-items-center justify-content-center h-100">
 
                                                 <div class="icon-background d-flex justify-content-center align-items-center">
@@ -405,20 +409,24 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fw-bolder">Apraxia del Habla Infantil</h5>
+                                    <h5 class="card-title fw-bolder">Método BLW y BLISS</h5>
                                     <p class="card-text text-muted lead">
-                                        (Agregar descripcion del curso de apraxia infantil)
+                                        Curso online, dictado por profesionales de la salud y orientado a profesionales
+                                        de la salud afines que se desempeñen en el área pediátrica.
                                     </p>
-                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                    <a class="btn btn-lg btn-primary mt-auto"
+                                       target="_blank" rel="noopener noreferrer nofollow"
+                                       href="https://drive.google.com/file/d/10FF3DWU3bJ37FQSBS1Ci70KIbwIM7MpU/view?usp=drivesdk"><i
+                                                class="fas fa-plus fa-lg me-2"></i>información</a>
                                 </div>
 
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
-                                        <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto ">
+                                        <h5 class="h5 text-muted">Asincrónico online</h5>
+                                        <!--<h5 class="h5 text-muted ms-auto ">
                                             <del class="old-price d-none">$150.000</del>
                                             $XX.XX
-                                        </h5>
+                                        </h5>-->
                                     </div>
                                     <div class="d-flex d-none">
                                         <p class="ms-auto mb-0 pb-0 lead">Oferta por 48 horas</p>
@@ -436,10 +444,10 @@ header('Accept-Encoding: gzip, compress, br');
 
                                     <picture>
 
-                                        <source srcset="img/cursos/anatomofisiologia-min.webp" type="image/webp">
-                                        <source srcset="img/cursos/anatomofisiologia-min.png" type="image/png">
+                                        <source srcset="img/cursos/rechazo_iv-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/rechazo_iv-min.png" type="image/png">
                                         <img
-                                                src="img/cursos/anatomofisiologia-min.png"
+                                                src="img/cursos/rechazo_iv-min.png"
                                                 class="card-img-top"
                                                 alt="Anatomofisiologia"
                                                 loading="lazy"
@@ -447,7 +455,8 @@ header('Accept-Encoding: gzip, compress, br');
                                     </picture>
 
                                     <div class="mask ">
-                                        <a href="#">
+                                        <a target="_blank" rel="noopener noreferrer nofollow"
+                                           href="https://drive.google.com/file/d/1jMqt1oOpj4i6o0nLTsH5v9ZYVPqwopGu/view">
                                             <div class="d-flex align-items-center justify-content-center h-100">
 
                                                 <div class="icon-background d-flex justify-content-center align-items-center">
@@ -459,18 +468,23 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fw-bold">Anatomofisiología de la Articulación</h5>
+                                    <h5 class="card-title fw-bold">Rechazo Alimentario IV</h5>
                                     <p class="card-text text-muted lead">
-                                        (Agregar descripcion del curso de anatomofisiología)
+                                        Curso online, dictado por profesionales de la salud y orientado a profesionales
+                                        de la salud que se desempeñen en el área pediátrica. O estudiantes de carreras
+                                        del área de salud.
                                     </p>
 
-                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                    <a class="btn btn-lg btn-primary mt-auto"
+                                       target="_blank" rel="noopener noreferrer nofollow"
+                                       href="https://drive.google.com/file/d/1jMqt1oOpj4i6o0nLTsH5v9ZYVPqwopGu/view"><i
+                                                class="fas fa-plus fa-lg me-2"></i>información</a>
                                 </div>
 
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
-                                        <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
+                                        <h5 class="h5 text-muted">Asincrónico online</h5>
+                                        <!--<h5 class="h5 text-muted ms-auto">$XX.XX</h5>-->
                                     </div>
 
                                 </div>
@@ -484,17 +498,18 @@ header('Accept-Encoding: gzip, compress, br');
 
                                     <picture>
 
-                                        <source srcset="img/cursos/alergia_alimentaria-min.webp" type="image/webp">
-                                        <source srcset="img/cursos/alergia_alimentaria-min.png" type="image/png">
+                                        <source srcset="img/cursos/autista-min.webp" type="image/webp">
+                                        <source srcset="img/cursos/autista-min.png" type="image/png">
                                         <img
-                                                src="img/cursos/alergia_alimentaria-min.png"
+                                                src="img/cursos/autista-min.png"
                                                 class="card-img-top"
-                                                alt="Alergia Alimentaria"
+                                                alt="Trastorno del Espectro Autista"
                                                 loading="lazy"
                                         />
                                     </picture>
                                     <div class="mask ">
-                                        <a href="#">
+                                        <a target="_blank" rel="noopener noreferrer nofollow"
+                                           href="https://drive.google.com/file/d/1Lo7urz4XGDi10iujGrw9mVyzVjX7WBcW/view">
                                             <div class="d-flex align-items-center justify-content-center h-100">
 
                                                 <div class="icon-background d-flex justify-content-center align-items-center">
@@ -506,20 +521,24 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 </div>
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fw-bold">Alergia Alimentaria</h5>
-                                    <p class="card-text text-muted lead">El curso online de Alergias alimentarias es
-                                        dictado
-                                        por
-                                        profesionales de la salud y orientado a profesionales de la salud afines que se
-                                        desempeñen en el área de alimentación.</p>
+                                    <h5 class="card-title fw-bold">Trastorno del Espectro Autista</h5>
+                                    <p class="card-text text-muted lead">
+                                        Curso online, que tiene como objetivo: comprender, actualizar conocimiento,
+                                        conocer nuevas formas de intervención y aprender a evaluar y elaborar informes
+                                        de evaluación y seguimiento. Curso dirigido a profesionales de la salud,
+                                        educación y estudiantes de carreras afines.
+                                    </p>
 
-                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
+                                    <a class="btn btn-lg btn-primary mt-auto"
+                                       target="_blank" rel="noopener noreferrer nofollow"
+                                       href="https://drive.google.com/file/d/1Lo7urz4XGDi10iujGrw9mVyzVjX7WBcW/view"><i
+                                                class="fas fa-plus fa-lg me-2"></i>información</a>
                                 </div>
 
                                 <div class="card-footer">
                                     <div class="d-flex align-items-center">
-                                        <h5 class="h5 text-muted">Asincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
+                                        <h5 class="h5 text-muted">Sincrónico online</h5>
+                                        <!--<h5 class="h5 text-muted ms-auto">$XX.XX</h5>-->
                                     </div>
 
                                 </div>
@@ -528,7 +547,12 @@ header('Accept-Encoding: gzip, compress, br');
                         </div>
 
                     </div>
+
+
+                    <!-- COMENTADO PARA POSIBLE USO FUTURO -->
+                    <!--
                     <div class="row mt-2 g-4 d-flex justify-content-center">
+
                         <div class="col-md-4">
                             <div class="card h-100">
                                 <div class="bg-image hover-overlay hover-zoom">
@@ -623,7 +647,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>
@@ -636,7 +660,9 @@ header('Accept-Encoding: gzip, compress, br');
             <div class="row text-center">
                 <h1 class="h2 mb-5">Certifica</h1>
                 <div class="d-flex flex-row justify-content-center align-items-center">
+                    <!--suppress CheckImageSize -->
                     <img src="img/iCONTEC.png" class="img-responsive rounded mx-5" height="180" alt="IconTec">
+                    <!--suppress CheckImageSize -->
                     <img src="img/otec_sence.jpg" class="img-responsive rounded mx-5" height="180" alt="SENCE Otec">
                 </div>
             </div>
