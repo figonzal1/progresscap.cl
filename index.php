@@ -46,6 +46,7 @@ header('Accept-Encoding: gzip, compress, br');
     <!-- CUSTOM MDB -->
     <link rel="preload stylesheet" href="src/scss/mdb.free.min.css" as="style" type="text/css" crossorigin>
 
+    <!--suppress CssUnusedSymbol -->
     <style>
 
         .dark-bg {
