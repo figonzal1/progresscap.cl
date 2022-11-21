@@ -347,53 +347,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <?php include_once("src/html/anatomofisiologia.html");?>
 
-                            <!-- BLW -->
-                            <div class="col-md-4">
-                                <div class="card h-100">
-                                    <div class="bg-image hover-overlay hover-zoom">
-
-                                        <picture>
-
-                                            <source srcset="img/cursos/blw.webp" type="image/webp">
-                                            <source srcset="img/cursos/blw.png" type="image/png">
-
-                                            <img src="img/cursos/blw.png" class="card-img-top" alt="Método BLW y BLISS" loading="lazy" />
-                                        </picture>
-
-                                        <div class="mask ">
-                                            <a href="https://drive.google.com/file/d/1ERzNaUjUy23ru0Qpl2qkYl5zyN7UthJT/view?usp=drivesdk" target="_blank" rel="noopener noreferrer nofollow">
-                                                <div class="d-flex align-items-center justify-content-center h-100">
-
-                                                    <div class="icon-background d-flex justify-content-center align-items-center">
-                                                        <em class="fas fa-external-link-alt fa-2x icon"></em>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title fw-bolder">Método BLW y BLISS</h5>
-                                        <p class="card-text text-muted lead">
-                                            En este curso aprenderás todo lo necesario para desempeñarte como asesor/a de los métodos de alimentación BLW y BLISS.
-                                        </p>
-                                        <p class="card-text text-muted lead">
-                                            Expone:
-                                            Nta. Daniel Oliva
-                                            Flga. Karla López
-                                            Enfermera Valeria Ahumada
-                                        </p>
-                                        <a class="btn btn-lg btn-primary mt-auto" target="_blank" rel="noopener noreferrer nofollow" href="https://drive.google.com/file/d/1ERzNaUjUy23ru0Qpl2qkYl5zyN7UthJT/view?usp=drivesdk"><em class="fas fa-plus fa-lg me-2"></em>información</a>
-                                    </div>
-
-                                    <div class="card-footer">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="h5 text-muted">Asincrónico online</h5>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                            <?php include_once("src/html/blw.html");?>
 
                             <!-- RA -->
                             <div class="col-md-4">
