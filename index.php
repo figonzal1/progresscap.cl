@@ -396,18 +396,18 @@ header('Accept-Encoding: gzip, compress, br');
 
                                         <picture>
 
-                                            <source srcset="img/cursos/blw_blis-min.webp" type="image/webp">
-                                            <source srcset="img/cursos/blw_blis-min.png" type="image/png">
+                                            <source srcset="img/cursos/blw.webp" type="image/webp">
+                                            <source srcset="img/cursos/blw.png" type="image/png">
 
-                                            <img src="img/cursos/blw_blis-min.png" class="card-img-top" alt="Método BLW y BLISS" loading="lazy" />
+                                            <img src="img/cursos/blw.png" class="card-img-top" alt="Método BLW y BLISS" loading="lazy" />
                                         </picture>
 
                                         <div class="mask ">
-                                            <a href="https://drive.google.com/file/d/10FF3DWU3bJ37FQSBS1Ci70KIbwIM7MpU/view?usp=drivesdk" target="_blank" rel="noopener noreferrer nofollow">
+                                            <a href="https://drive.google.com/file/d/1ERzNaUjUy23ru0Qpl2qkYl5zyN7UthJT/view?usp=drivesdk" target="_blank" rel="noopener noreferrer nofollow">
                                                 <div class="d-flex align-items-center justify-content-center h-100">
 
                                                     <div class="icon-background d-flex justify-content-center align-items-center">
-                                                        <i class="fas fa-external-link-alt fa-2x icon"></i>
+                                                        <em class="fas fa-external-link-alt fa-2x icon"></em>
                                                     </div>
                                                 </div>
                                             </a>
@@ -417,25 +417,21 @@ header('Accept-Encoding: gzip, compress, br');
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title fw-bolder">Método BLW y BLISS</h5>
                                         <p class="card-text text-muted lead">
-                                            Curso online, dictado por profesionales de la salud y orientado a profesionales
-                                            de la salud afines que se desempeñen en el área pediátrica.
+                                            En este curso aprenderás todo lo necesario para desempeñarte como asesor/a de los métodos de alimentación BLW y BLISS.
                                         </p>
-                                        <a class="btn btn-lg btn-primary mt-auto" target="_blank" rel="noopener noreferrer nofollow" href="https://drive.google.com/file/d/10FF3DWU3bJ37FQSBS1Ci70KIbwIM7MpU/view?usp=drivesdk"><i class="fas fa-plus fa-lg me-2"></i>información</a>
+                                        <p class="card-text text-muted lead">
+                                            Expone:
+                                            Nta. Daniel Oliva
+                                            Flga. Karla López
+                                            Enfermera Valeria Ahumada
+                                        </p>
+                                        <a class="btn btn-lg btn-primary mt-auto" target="_blank" rel="noopener noreferrer nofollow" href="https://drive.google.com/file/d/1ERzNaUjUy23ru0Qpl2qkYl5zyN7UthJT/view?usp=drivesdk"><em class="fas fa-plus fa-lg me-2"></em>información</a>
                                     </div>
 
                                     <div class="card-footer">
                                         <div class="d-flex align-items-center">
                                             <h5 class="h5 text-muted">Asincrónico online</h5>
-                                            <!--<h5 class="h5 text-muted ms-auto ">
-                                            <del class="old-price d-none">$150.000</del>
-                                            $XX.XX
-                                        </h5>-->
                                         </div>
-                                        <div class="d-flex d-none">
-                                            <p class="ms-auto mb-0 pb-0 lead">Oferta por 48 horas</p>
-                                        </div>
-
-
                                     </div>
 
                                 </div>
