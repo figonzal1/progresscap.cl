@@ -268,7 +268,7 @@ header('Accept-Encoding: gzip, compress, br');
                         <h3 class="h1">Bienvenido a Progress</h3>
 
                         <h3 class="mt-5 fw-bold">Quienes Somos</h3>
-                        <p class="text-muted mb-5 lead">Somos un <b>Organismo Técnico de Capaticatión</b> (OTEC) enfocado en
+                        <p class="text-muted mb-5 lead">Somos un <strong>Organismo Técnico de Capaticatión</strong> (OTEC) enfocado en
                             la
                             capacitación de
                             profesionales de las áreas de salud y educación.</p>
@@ -276,7 +276,7 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
 
                             <div class="icon-background-lg d-flex justify-content-center align-items-center flex-shrink-0">
-                                <i class="fas fa-chalkboard-teacher fa-2x icon"></i>
+                                <em class="fas fa-chalkboard-teacher fa-2x icon"></em>
                             </div>
 
                             <div class="ms-4 flex-grow-1">
@@ -289,7 +289,7 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
 
                             <div class="icon-background-lg d-flex justify-content-center align-items-center flex-shrink-0">
-                                <i class="fas fa-award fa-2x icon"></i>
+                                <em class="fas fa-award fa-2x icon"></em>
                             </div>
 
                             <div class="ms-4 flex-grow-1">
@@ -302,7 +302,7 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
 
                             <div class="icon-background-lg d-flex justify-content-center align-items-center flex-shrink-0">
-                                <i class="fas fa-stopwatch fa-2x icon"></i>
+                                <em class="fas fa-stopwatch fa-2x icon"></em>
                             </div>
 
                             <div class="ms-4 flex-grow-1">
@@ -394,7 +394,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="d-flex justify-content-start align-items-center mb-2">
 
                                     <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
-                                        <i class="fas fa-map-marker-alt icon"></i>
+                                        <em class="fas fa-map-marker-alt icon"></em>
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
@@ -408,7 +408,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="d-flex justify-content-start align-items-center mb-2">
 
                                     <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
-                                        <i class="fas fa-phone-alt icon"></i>
+                                        <em class="fas fa-phone-alt icon"></em>
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
@@ -422,7 +422,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="d-flex justify-content-start align-items-center mb-2">
 
                                     <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
-                                        <i class="fas fa-envelope icon"></i>
+                                        <em class="fas fa-envelope icon"></em>
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
@@ -442,28 +442,28 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="links">
                             <div class="row">
                                 <div class="col-1 text-center">
-                                    <i class="fas fa-arrow-right"></i>
+                                    <em class="fas fa-arrow-right"></em>
                                 </div>
                                 <div class="col-11 "><a href="https://www.progresscap.cl/#inicio">Inicio</a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-1 text-center">
-                                    <i class="fas fa-arrow-right"></i>
+                                    <em class="fas fa-arrow-right"></em>
                                 </div>
                                 <div class="col-11 "><a href="https://www.progresscap.cl/#acerca">Acerca</a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-1 text-center">
-                                    <i class="fas fa-arrow-right"></i>
+                                    <em class="fas fa-arrow-right"></em>
                                 </div>
                                 <div class="col-11 "><a href="https://www.progresscap.cl/#cursos">Cursos</a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-1 text-center">
-                                    <i class="fas fa-arrow-right"></i>
+                                    <em class="fas fa-arrow-right"></em>
                                 </div>
                                 <div class="col-11 "><a href="https://www.progresscap.cl/#contacto">Contacto</a>
                                 </div>
@@ -481,7 +481,7 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="d-flex justify-content-lg-start justify-content-xl-start justify-content-center justify-content-xs-center align-items-center">
 
                             <!-- IG -->
-                            <a class="btn btn-floating btn-lg m-1 text-white shadow-1-strong" href="https://www.instagram.com/cap.progress" rel="noopener noreferrer nofollow" role="button" style="background-color: #E1306C" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a class="btn btn-floating btn-lg m-1 text-white shadow-1-strong" href="https://www.instagram.com/cap.progress" rel="noopener noreferrer nofollow" role="button" style="background-color: #E1306C" target="_blank"><em class="fab fa-instagram fa-lg"></em></a>
                         </div>
                     </div>
 
