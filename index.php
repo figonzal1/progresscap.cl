@@ -343,15 +343,17 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
 
-                            <?php include_once("src/html/auriculoterapia.html");?>
+                            <?php include_once("src/html/porteo_ergonomico.html"); ?>
 
-                            <?php include_once("src/html/anatomofisiologia.html");?>
+                            <?php include_once("src/html/auriculoterapia.html"); ?>
 
-                            <?php include_once("src/html/blw.html");?>
+                            <?php include_once("src/html/anatomofisiologia.html"); ?>
 
-                            <?php include_once("src/html/ra.html");?>
-                            
-                            <?php include_once("src/html/tea.html");?>
+                            <?php include_once("src/html/blw.html"); ?>
+
+                            <?php include_once("src/html/ra.html"); ?>
+
+                            <?php include_once("src/html/tea.html"); ?>
 
                         </div>
 
