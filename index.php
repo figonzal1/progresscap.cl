@@ -343,6 +343,53 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
 
+                            <!-- Anatomofisiologia -->
+
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="bg-image hover-overlay hover-zoom">
+
+                                        <picture>
+
+                                            <source srcset="img/cursos/anatomofisiologia.webp" type="image/webp">
+                                            <source srcset="img/cursos/anatomofisiologia.png" type="image/png">
+
+                                            <img src="img/cursos/anatomofisiologia.png" class="card-img-top" alt="Anatomofisiología" loading="lazy" />
+                                        </picture>
+
+                                        <div class="mask ">
+                                            <a href="https://drive.google.com/file/d/19pk8d4JVrqitklgM-3nX_E7t-_xbqgAP/view?usp=drivesdk" target="_blank" rel="noopener noreferrer nofollow">
+                                                <div class="d-flex align-items-center justify-content-center h-100">
+
+                                                    <div class="icon-background d-flex justify-content-center align-items-center">
+                                                        <em class="fas fa-external-link-alt fa-2x icon"></em>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title fw-bolder">Anatomofisiología de la Articulación</h5>
+                                        <p class="card-text text-muted lead">En este curso aprenderás todo lo necesario previamente para poder intervenir en trastornos motores del habla.</p>
+                                        <p class="card-text text-muted lead">Expone: Flga. Claudia Gómez O.
+                                            Fonoaudióloga (UV).
+                                        </p>
+
+
+                                        <a class="btn btn-lg btn-primary mt-auto" target="_blank" rel="noopener noreferrer nofollow" href="https://drive.google.com/file/d/19pk8d4JVrqitklgM-3nX_E7t-_xbqgAP/view?usp=drivesdk"><em class="fas fa-plus fa-lg me-2"></em>información</a>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="h5 text-muted">Sincrónico online</h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- BLW -->
                             <div class="col-md-4">
                                 <div class="card h-100">
                                     <div class="bg-image hover-overlay hover-zoom">
