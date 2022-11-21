@@ -85,7 +85,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                 </a>
                 <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-mdb-target="#navbarNavAltMarkup" data-mdb-toggle="collapse" type="button">
-                    <i class="fas fa-bars"></i>
+                    <em class="fas fa-bars"></em>
                 </button>
 
                 <!-- RIGH MENU -->
@@ -119,7 +119,7 @@ header('Accept-Encoding: gzip, compress, br');
                     <!-- Left Icons -->
                     <div class="navbar-nav d-flex flex-row ms-auto">
                         <a href="https://www.moodle.progresscap.cl" rel="noopener noreferrer" target="_blank" class="nav-link px-0">Moodle</a>
-                        <a class="nav-link px-0 ms-3" href="https://www.instagram.com/cap.progress/" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="nav-link px-0 ms-3" href="https://www.instagram.com/cap.progress/" rel="noopener noreferrer" target="_blank"><em class="fab fa-instagram"></em></a>
                     </div>
                 </div>
 
@@ -356,108 +356,6 @@ header('Accept-Encoding: gzip, compress, br');
                             <?php include_once("src/html/tea.html"); ?>
 
                         </div>
-
-
-                        <!-- COMENTADO PARA POSIBLE USO FUTURO -->
-                        <!--
-                    <div class="row mt-2 g-4 d-flex justify-content-center">
-
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <div class="bg-image hover-overlay hover-zoom">
-
-                                    <picture>
-
-                                        <source srcset="img/cursos/interaccion_digital-min.webp" type="image/webp">
-                                        <source srcset="img/cursos/interaccion_digital-min.png" type="image/png">
-                                        <img
-                                                src="img/cursos/interaccion_digital-min.png"
-                                                class="card-img-top"
-                                                alt="Curso Interacción Digital"
-                                                loading="lazy"
-                                        />
-                                    </picture>
-
-                                    <div class="mask ">
-                                        <a href="#">
-                                            <div class="d-flex align-items-center justify-content-center h-100">
-
-                                                <div class="icon-background d-flex justify-content-center align-items-center">
-                                                    <i class="fas fa-external-link-alt fa-2x icon"></i>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fw-bold">Interacción digital</h5>
-                                    <p class="card-text text-muted lead">(Agregar descripción del curso de interacción
-                                        digital)</p>
-
-                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
-                                </div>
-
-                                <div class="card-footer">
-                                    <div class="d-flex align-items-center">
-                                        <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <div class="bg-image hover-overlay hover-zoom">
-
-                                    <picture>
-
-                                        <source srcset="img/cursos/tea-min.webp" type="image/webp">
-                                        <source srcset="img/cursos/tea-min.png" type="image/png">
-                                        <img
-                                                src="img/cursos/tea-min.png"
-                                                class="card-img-top"
-                                                alt="Curso TEA"
-                                                loading="lazy"
-                                        />
-                                    </picture>
-                                    <div class="mask">
-                                        <a href="#">
-                                            <div class="d-flex align-items-center justify-content-center h-100">
-
-                                                <div class="icon-background d-flex justify-content-center align-items-center">
-                                                    <i class="fas fa-external-link-alt fa-2x icon"></i>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fw-bold">Estrategias Educativas TEA</h5>
-                                    <p class="card-text text-muted lead">El diagnóstico de Trastrorno del Espectro
-                                        Autista ha incrementado en el último tiempo, debido a la constante percepción
-                                        de los profesionales de la salud y educación, así como también el
-                                        diagnóstico precoz, que permite con ello una intervención precoz.</p>
-
-                                    <button class="btn btn-lg btn-outline-primary mt-auto">Ver curso</button>
-                                </div>
-
-                                <div class="card-footer">
-                                    <div class="d-flex align-items-center">
-                                        <h5 class="h5 text-muted">Sincrónico online</h5>
-                                        <h5 class="h5 text-muted ms-auto">$XX.XX</h5>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>-->
-
                     </div>
                 </div>
 
