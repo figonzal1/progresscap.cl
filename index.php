@@ -343,8 +343,9 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
 
-                            <!-- Anatomofisiologia -->
+                            <?php include_once("src/html/auriculoterapia.html");?>
 
+                            <!-- Anatomofisiologia -->
                             <div class="col-md-4">
                                 <div class="card h-100">
                                     <div class="bg-image hover-overlay hover-zoom">
@@ -437,6 +438,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 </div>
                             </div>
 
+                            <!-- RA -->
                             <div class="col-md-4">
                                 <div class="card h-100">
                                     <div class="bg-image hover-overlay hover-zoom">
@@ -482,6 +484,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 </div>
                             </div>
 
+                            <!-- TEA -->
                             <div class="col-md-4">
                                 <div class="card h-100">
                                     <div class="bg-image hover-overlay hover-zoom">
