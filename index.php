@@ -161,7 +161,6 @@ header('Accept-Encoding: gzip, compress, br');
                                     <h2 class="h1">Mes de la fonoaudiología</h2>
                                     <div class="mx-5 mb-4">
                                         <p class="px-5 pt-3 lead d-none d-sm-block">Obtén descuento en <strong>todos</strong> nuestros cursos</p>
-
                                     </div>
                                     <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
                                         cursos</a>
@@ -365,11 +364,19 @@ header('Accept-Encoding: gzip, compress, br');
             <div class="container-fluid mt-5 py-5 certificados">
                 <div class="row text-center">
                     <h1 class="h2 mb-5">Certifica</h1>
-                    <div class="d-flex flex-row justify-content-center align-items-center">
-                        <!--suppress CheckImageSize -->
-                        <img src="img/iCONTEC.png" class="img-responsive rounded mx-5" height="180" alt="IconTec">
-                        <!--suppress CheckImageSize -->
-                        <img src="img/otec_sence.jpg" class="img-responsive rounded mx-5" height="180" alt="SENCE Otec">
+                    <div class="d-flex justify-content-center align-items-center">
+
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-sm-12">
+                                <!--suppress CheckImageSize -->
+                                <img src="img/iCONTEC.png" class="img-responsive rounded mx-5" style="width: 30%;" alt="IconTec">
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <!--suppress CheckImageSize -->
+                                <img src="img/otec_sence.jpg" class="img-responsive rounded mx-5" style="width: 30%;" alt="SENCE Otec">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
