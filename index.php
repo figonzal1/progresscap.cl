@@ -98,16 +98,22 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Método BLW y
-                                        BLISS</a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Porteo Ergonómico <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Rechazo alimentario
-                                        IV</a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Auriculoterapia <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Trastorno del
-                                        Espectro Autista</a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Anatomofisiología de la articulación <span class="badge badge-primary">Nuevo</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Método BLW y BLISS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Rechazo alimentario IV</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Trastorno del Espectro Autista</a>
                                 </li>
 
                             </ul>
@@ -152,28 +158,24 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <div class="col-md-7 col-sm-12">
                                 <div class="d-row text-center text-white px-5">
-                                    <h2 class="h1">Trastorno del Espectro Autista</h2>
+                                    <h2 class="h1">Mes de la fonoaudiología</h2>
                                     <div class="mx-5 mb-4">
-                                        <p class="px-5 pt-3 lead d-none d-sm-block">Curso online, que tiene como objetivo:
-                                            comprender, actualizar conocimiento,
-                                            conocer nuevas formas de intervención y aprender a evaluar y elaborar informes
-                                            de evaluación y seguimiento.</p>
+                                        <p class="px-5 pt-3 lead d-none d-sm-block">Obtén descuento en <strong>todos</strong> nuestros cursos</p>
+
                                     </div>
                                     <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
-                                        curso</a>
-
+                                        cursos</a>
                                 </div>
                             </div>
                             <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                                 <picture>
-                                    <source srcset="img/cursos/autista-min.png" type="image/png">
-                                    <source srcset="img/cursos/autista-min.webp" type="image/webp">
+                                    <source srcset="img/cursos/banner.png" type="image/png">
+                                    <source srcset="img/cursos/banner.webp" type="image/webp">
 
                                     <!--suppress CheckImageSize -->
-                                    <img src="img/cursos/autista-min.png" class="img-responsive rounded shadow-5-strong" height="650" loading="lazy" alt="Trastorno del Espectro Autista">
+                                    <img src="img/cursos/banner.png" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Mes fonoaudiología" style="width: 70%;">
                                 </picture>
-
                             </div>
 
 
@@ -189,12 +191,10 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <div class="col-md-7 col-sm-12">
                                 <div class="d-row text-center text-white px-5">
-                                    <h2 class="h1">Rechazo Alimentario IV</h2>
+                                    <h2 class="h1">Asesor/a en Porteo Ergonómico</h2>
                                     <div class="mx-5 mb-4">
                                         <p class="px-5 pt-3 lead d-none d-sm-block">
-                                            Curso online, dictado por profesionales de la salud y orientado a profesionales
-                                            de la salud que se desempeñen en el área pediátrica. O estudiantes de carreras
-                                            del área de salud.
+                                            Curso online, dirigido a profesionales de la salud que quieran formarse como Asesores/as de porteo ergonómico
                                         </p>
                                     </div>
                                     <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
@@ -205,11 +205,11 @@ header('Accept-Encoding: gzip, compress, br');
                             <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                                 <picture>
-                                    <source srcset="img/cursos/rechazo_iv-min.png" type="image/png">
-                                    <source srcset="img/cursos/rechazo_iv-min.webp" type="image/webp">
+                                    <source srcset="img/cursos/porteo_ergonomico.png" type="image/png">
+                                    <source srcset="img/cursos/porteo_ergonomico.webp" type="image/webp">
 
                                     <!--suppress CheckImageSize -->
-                                    <img src="img/cursos/rechazo_iv-min.png" class="img-responsive rounded shadow-5-strong" height="650" loading="lazy" alt="Rechazo Alimentario IV">
+                                    <img src="img/cursos/porteo_ergonomico.png" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Porteo Ergonomico" style="width: 70%;">
                                 </picture>
 
                             </div>
@@ -227,11 +227,10 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <div class="col-md-7 col-sm-12">
                                 <div class="d-row text-center text-white px-5">
-                                    <h2 class="h1">Método BLW y BLISS</h2>
+                                    <h2 class="h1">Auriculoterapia</h2>
                                     <div class="mx-5 mb-4">
                                         <p class="px-5 pt-3 lead d-none d-sm-block">
-                                            Curso online, dictado por profesionales de la salud y orientado a profesionales
-                                            de la salud afines que se desempeñen en el área pediátrica.
+                                            Curso presencial de Auriculoterapia, dirigido a profesionales que busquen formarse como auriculoterapeutas
                                         </p>
                                     </div>
 
@@ -244,10 +243,10 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 <picture>
 
-                                    <source srcset="img/cursos/blw_blis-min.png" type="image/webp">
-                                    <source srcset="img/cursos/blw_blis-min.webp" type="image/png">
+                                    <source srcset="img/cursos/auriculoterapia.png" type="image/webp">
+                                    <source srcset="img/cursos/auriculoterapia.webp" type="image/png">
 
-                                    <img src="img/cursos/blw_blis-min.webp" class="img-responsive rounded shadow-5-strong" height="650" loading="lazy" alt="Metodo BLW y BLISS">
+                                    <img src="img/cursos/auriculoterapia.webp" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Auriculoterapia" style="width: 70%;">
                                 </picture>
                             </div>
 
