@@ -405,7 +405,7 @@ header('Accept-Encoding: gzip, compress, br');
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
-                                        <p class="text-muted m-0 ">Las Rojas Poniente #236, La Serena, Chile.</p>
+                                        <p class="text-muted m-0 ">Las Rojas Poniente #1489, La Serena, Chile.</p>
                                     </div>
 
                                 </div>
@@ -415,11 +415,11 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="d-flex justify-content-start align-items-center mb-2">
 
                                     <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
-                                        <em class="fas fa-phone-alt icon"></em>
+                                    <a href="https://api.whatsapp.com/send?phone=56956876165" target="_blank"  rel="noopener noreferrer nofollow"><em class="fas fa-phone-alt icon"></em></a>
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
-                                        <p class="text-muted m-0 ">+569 56876165</p>
+                                        <p class="text-muted m-0 "><a href="https://api.whatsapp.com/send?phone=56956876165" target="_blank"  rel="noopener noreferrer nofollow">+569 5687 6165</a></p>
                                     </div>
 
                                 </div>
@@ -429,11 +429,11 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="d-flex justify-content-start align-items-center mb-2">
 
                                     <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
-                                        <em class="fas fa-envelope icon"></em>
+                                    <p class="text-muted m-0 "><a href="mailto:capacitaciones.progress@gmail.com"><em class="fas fa-envelope icon"></em></a></p>
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
-                                        <p class="text-muted m-0 ">capacitaciones.progress@gmail.com</p>
+                                        <p class="text-muted m-0 "><a href="mailto:capacitaciones.progress@gmail.com">capacitaciones.progress@gmail.com</a></p>
                                     </div>
 
                                 </div>
