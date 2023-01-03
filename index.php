@@ -3,7 +3,7 @@ header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header("X-XSS-Protection: 1; mode=block");
 header("Referrer-Policy: strict-origin-when-cross-origin");
-header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://use.fontawesome.com https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://use.fontawesome.com/");
+header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' http://*.bluehosting.cl data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://use.fontawesome.com https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://use.fontawesome.com/");
 header("Permissions-Policy: fullscreen=(), geolocation=(), camera=(), microphone=()");
 header('Accept-Encoding: gzip, compress, br');
 ?>
@@ -351,7 +351,8 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <?php include_once("src/html/ra.html"); ?>
 
-                            <?php #include_once("src/html/tea.html"); ?>
+                            <?php #include_once("src/html/tea.html"); 
+                            ?>
 
                         </div>
                     </div>
@@ -502,10 +503,16 @@ header('Accept-Encoding: gzip, compress, br');
                 </script>
                 López & Eguiluz LTDA<br />
                 INN: A-9854 <br />
-                <p class="my-0">Diseñado por <a class="fw-bold" href="https://www.figonzal.cl" rel="noopener noreferrer nofollow" target="_blank">figonzal.cl</a></p>
+                <p class="my-0">
+                    Diseñado por
+                    <a class="fw-bold" href="https://www.figonzal.cl" rel="noopener noreferrer nofollow" target="_blank">figonzal.cl</a>
+                    &
+                    <a target="_blank" href="http://panel.bluehosting.host/aff.php?aff=3660">Hosteado</a>
+                    por
+                    <a target="_blank" class="fw-bold" href="http://panel.bluehosting.host/aff.php?aff=3660">BlueHosting</a>
+                </p>
             </div>
         </section>
-
     </footer>
 
 
