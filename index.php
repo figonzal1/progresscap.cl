@@ -101,21 +101,17 @@ header('Accept-Encoding: gzip, compress, br');
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Porteo Ergonómico <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Auriculoterapia <span class="badge badge-primary">Nuevo</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Anatomofisiología de la articulación <span class="badge badge-secondary">Nueva versión</span></a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Anatomofisiología de la articulación <span class="badge badge-primary">Nuevo</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Rechazo Alimentario <span class="badge badge-secondary">Nueva versión</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Auriculoterapia <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Método BLW y BLISS</a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Rechazo alimentario IV</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Trastorno del Espectro Autista</a>
-                                </li>
-
                             </ul>
                         </div>
 
@@ -158,22 +154,24 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <div class="col-md-7 col-sm-12">
                                 <div class="d-row text-center text-white px-5">
-                                    <h2 class="h1">Mes de la fonoaudiología</h2>
+                                    <h2 class="h1">Diplomado Rechazo Alimentario</h2>
                                     <div class="mx-5 mb-4">
-                                        <p class="px-5 pt-3 lead d-none d-sm-block">Obtén descuento en <strong>todos</strong> nuestros cursos</p>
+                                        <p class="px-5 pt-3 lead d-none d-sm-block">
+                                            Nueva versión del diplomado de rechazo alimentario. ¡Inscríbete!
+                                        </p>
                                     </div>
                                     <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
-                                        cursos</a>
+                                        curso</a>
                                 </div>
                             </div>
                             <div class="col-md-5 col-sm-12 d-none d-md-block">
 
                                 <picture>
-                                    <source srcset="img/cursos/banner.png" type="image/png">
-                                    <source srcset="img/cursos/banner.webp" type="image/webp">
+                                    <source srcset="img/cursos/ra_diplomado.png" type="image/png">
+                                    <source srcset="img/cursos/ra_diplomado.webp" type="image/webp">
 
                                     <!--suppress CheckImageSize -->
-                                    <img src="img/cursos/banner.png" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Mes fonoaudiología" style="width: 70%;">
+                                    <img src="img/cursos/ra_diplomado.png" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Porteo Ergonomico" style="width: 70%;">
                                 </picture>
                             </div>
 
@@ -341,18 +339,15 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
 
+                            <?php include_once("src/html/ra.html"); ?>
+
+                            <?php include_once("src/html/anatomofisiologia.html"); ?>
+
                             <?php include_once("src/html/porteo_ergonomico.html"); ?>
 
                             <?php include_once("src/html/auriculoterapia.html"); ?>
 
-                            <?php include_once("src/html/anatomofisiologia.html"); ?>
-
                             <?php include_once("src/html/blw.html"); ?>
-
-                            <?php include_once("src/html/ra.html"); ?>
-
-                            <?php #include_once("src/html/tea.html"); 
-                            ?>
 
                         </div>
                     </div>
@@ -415,11 +410,11 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="d-flex justify-content-start align-items-center mb-2">
 
                                     <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
-                                    <a href="https://api.whatsapp.com/send?phone=56956876165" target="_blank"  rel="noopener noreferrer nofollow"><em class="fas fa-phone-alt icon"></em></a>
+                                        <a href="https://api.whatsapp.com/send?phone=56956876165" target="_blank" rel="noopener noreferrer nofollow"><em class="fas fa-phone-alt icon"></em></a>
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
-                                        <p class="text-muted m-0 "><a href="https://api.whatsapp.com/send?phone=56956876165" target="_blank"  rel="noopener noreferrer nofollow">+569 5687 6165</a></p>
+                                        <p class="text-muted m-0 "><a href="https://api.whatsapp.com/send?phone=56956876165" target="_blank" rel="noopener noreferrer nofollow">+569 5687 6165</a></p>
                                     </div>
 
                                 </div>
@@ -429,7 +424,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="d-flex justify-content-start align-items-center mb-2">
 
                                     <div class="icon-background-md d-flex justify-content-center align-items-center flex-shrink-0">
-                                    <p class="text-muted m-0 "><a href="mailto:capacitaciones.progress@gmail.com"><em class="fas fa-envelope icon"></em></a></p>
+                                        <p class="text-muted m-0 "><a href="mailto:capacitaciones.progress@gmail.com"><em class="fas fa-envelope icon"></em></a></p>
                                     </div>
 
                                     <div class="ms-3 flex-grow-1">
