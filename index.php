@@ -98,19 +98,27 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Porteo Ergonómico <span class="badge badge-primary">Nuevo</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Porteo Ergonómico <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
+
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Anatomofisiología de la articulación <span class="badge badge-secondary">Nueva versión</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Auriculoterapia <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Fonoaudiología Neonatal <span class="badge badge-primary">Nuevo</span></a>
+                                </li>
+
                                 <li>
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Rechazo Alimentario <span class="badge badge-secondary">Nueva versión</span></a>
                                 </li>
+
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Auriculoterapia <span class="badge badge-primary">Nuevo</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Anatomofisiología de la articulación <span class="badge badge-secondary">Nueva versión</span></a>
                                 </li>
+                                
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Método BLW y BLISS</a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Método BLW y BLISS <span class="badge badge-warning">Cerrado</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -339,13 +347,15 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
 
-                            <?php include_once("src/html/ra.html"); ?>
-
-                            <?php include_once("src/html/anatomofisiologia.html"); ?>
-
                             <?php include_once("src/html/porteo_ergonomico.html"); ?>
 
                             <?php include_once("src/html/auriculoterapia.html"); ?>
+
+                            <?php include_once("src/html/neonatal.html"); ?>
+
+                            <?php include_once("src/html/ra.html"); ?>
+
+                            <?php include_once("src/html/anatomofisiologia.html"); ?>
 
                             <?php include_once("src/html/blw.html"); ?>
 
