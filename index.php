@@ -98,7 +98,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Porteo Ergonómico <span class="badge badge-primary">Nuevo</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Porteo Ergonómico <span class="badge badge-success">Liberado</span></a>
                                 </li>
 
                                 <li>
@@ -118,7 +118,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 </li>
                                 
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Método BLW y BLISS <span class="badge badge-warning">Cerrado</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Método BLW y BLISS <span class="badge badge-success">Liberado</span></a>
                                 </li>
                             </ul>
                         </div>
