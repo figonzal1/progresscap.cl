@@ -102,6 +102,10 @@ header('Accept-Encoding: gzip, compress, br');
                                 </li>
 
                                 <li>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Cápsulas de Aprendizaje <span class="badge badge-success">Liberado</span></a>
+                                </li>
+
+                                <li>
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Auriculoterapia <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
 
@@ -348,6 +352,8 @@ header('Accept-Encoding: gzip, compress, br');
                         <div class="row g-4">
 
                             <?php include_once("src/html/porteo_ergonomico.html"); ?>
+
+                            <?php include_once("src/html/capsulas.html"); ?>
 
                             <?php include_once("src/html/auriculoterapia.html"); ?>
 
