@@ -127,6 +127,17 @@ header('Accept-Encoding: gzip, compress, br');
                             </ul>
                         </div>
 
+                        <div class="dropdown">
+                            <a href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Contenido gratuito</a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="https://www.youtube.com/@progresscap" rel="noopener noreferrer" target="_blank">Canal de Youtube</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
                         <a href="https://www.progresscap.cl/#contacto" aria-current="page" class="nav-link">Contacto</a>
                     </div>
 
@@ -134,6 +145,7 @@ header('Accept-Encoding: gzip, compress, br');
                     <div class="navbar-nav d-flex flex-row ms-auto">
                         <a href="https://www.moodle.progresscap.cl" rel="noopener noreferrer" target="_blank" class="nav-link px-0">Moodle</a>
                         <a class="nav-link px-0 ms-3" href="https://www.instagram.com/cap.progress/" rel="noopener noreferrer" target="_blank"><em class="fab fa-instagram"></em></a>
+                        <a class="nav-link px-0 ms-3" href="https://www.youtube.com/@progresscap" rel="noopener noreferrer" target="_blank"><em class="fab fa-youtube"></em></a>
                     </div>
                 </div>
 
@@ -500,6 +512,9 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <!-- IG -->
                             <a class="btn btn-floating btn-lg m-1 text-white shadow-1-strong" href="https://www.instagram.com/cap.progress" rel="noopener noreferrer nofollow" role="button" style="background-color: #E1306C" target="_blank"><em class="fab fa-instagram fa-lg"></em></a>
+                            
+                            <!-- Youtube -->
+                            <a class="btn btn-floating btn-lg m-1 text-white shadow-1-strong" href="https://www.youtube.com/@progresscap" rel="noopener noreferrer nofollow" role="button" style="background-color: #E1306C" target="_blank"><em class="fab fa-youtube fa-lg"></em></a>
                         </div>
                     </div>
 
