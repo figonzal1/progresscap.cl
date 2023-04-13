@@ -1,4 +1,4 @@
-import {setScrollingClassInstantly} from './lib/class-names';
+import { setScrollingClassInstantly } from './lib/class-names';
 
 function createEvent(name) {
   if (typeof window.CustomEvent === 'function') {
@@ -24,11 +24,11 @@ export default function (i, axis, diff, useScrollingClass = true, forceFireReach
 }
 
 function processScrollDiff(
-    i,
-    diff,
-    [contentHeight, containerHeight, scrollTop, y, up, down],
-    useScrollingClass = true,
-    forceFireReachEvent = false
+  i,
+  diff,
+  [contentHeight, containerHeight, scrollTop, y, up, down],
+  useScrollingClass = true,
+  forceFireReachEvent = false
 ) {
   const element = i.element;
 

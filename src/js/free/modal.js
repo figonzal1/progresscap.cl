@@ -1,4 +1,4 @@
-import {getjQuery, getSelectorFromElement, onDOMContentLoaded} from '../mdb/util';
+import { getjQuery, getSelectorFromElement, onDOMContentLoaded } from '../mdb/util/index';
 import EventHandler from '../mdb/dom/event-handler';
 import SelectorEngine from '../mdb/dom/selector-engine';
 import BSModal from '../bootstrap/mdb-prefix/modal';
@@ -34,11 +34,6 @@ class Modal extends BSModal {
     this._init();
   }
 
-  // Getters
-  static get NAME() {
-    return NAME;
-  }
-
   dispose() {
     EventHandler.off(this._element, EVENT_SHOW_BS);
     EventHandler.off(this._element, EVENT_SHOWN_BS);
@@ -47,6 +42,11 @@ class Modal extends BSModal {
     EventHandler.off(this._element, EVENT_HIDE_PREVENTED_BS);
 
     super.dispose();
+  }
+
+  // Getters
+  static get NAME() {
+    return NAME;
   }
 
   // Private
@@ -60,13 +60,13 @@ class Modal extends BSModal {
 
   _bindShowEvent() {
     EventHandler.on(this._element, EVENT_SHOW_BS, (e) => {
-      EventHandler.trigger(this._element, EVENT_SHOW, {relatedTarget: e.relatedTarget});
+      EventHandler.trigger(this._element, EVENT_SHOW, { relatedTarget: e.relatedTarget });
     });
   }
 
   _bindShownEvent() {
     EventHandler.on(this._element, EVENT_SHOWN_BS, (e) => {
-      EventHandler.trigger(this._element, EVENT_SHOWN, {relatedTarget: e.relatedTarget});
+      EventHandler.trigger(this._element, EVENT_SHOWN, { relatedTarget: e.relatedTarget });
     });
   }
 

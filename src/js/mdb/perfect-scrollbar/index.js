@@ -6,7 +6,7 @@ import cls from './lib/class-names';
 import EventManager from './lib/event-manager';
 import processScrollDiff from './process-scroll-diff';
 import updateGeometry from './update-geometry';
-import {outerWidth, toInt} from './lib/util';
+import { toInt, outerWidth } from './lib/util';
 
 import clickRail from './handlers/click-rail';
 import dragThumb from './handlers/drag-thumb';
@@ -77,8 +77,8 @@ export default class PerfectScrollbar {
       return result;
     })();
     this.negativeScrollAdjustment = this.isNegativeScroll
-        ? element.scrollWidth - element.clientWidth
-        : 0;
+      ? element.scrollWidth - element.clientWidth
+      : 0;
     this.event = new EventManager();
     this.ownerDocument = element.ownerDocument || document;
 
@@ -102,9 +102,9 @@ export default class PerfectScrollbar {
     }
     this.railBorderXWidth = toInt(railXStyle.borderLeftWidth) + toInt(railXStyle.borderRightWidth);
     // Set rail to display:block to calculate margins
-    CSS.set(this.scrollbarXRail, {display: 'block'});
+    CSS.set(this.scrollbarXRail, { display: 'block' });
     this.railXMarginWidth = toInt(railXStyle.marginLeft) + toInt(railXStyle.marginRight);
-    CSS.set(this.scrollbarXRail, {display: ''});
+    CSS.set(this.scrollbarXRail, { display: '' });
     this.railXWidth = null;
     this.railXRatio = null;
 
@@ -128,25 +128,25 @@ export default class PerfectScrollbar {
     }
     this.scrollbarYOuterWidth = this.isRtl ? outerWidth(this.scrollbarY) : null;
     this.railBorderYWidth = toInt(railYStyle.borderTopWidth) + toInt(railYStyle.borderBottomWidth);
-    CSS.set(this.scrollbarYRail, {display: 'block'});
+    CSS.set(this.scrollbarYRail, { display: 'block' });
     this.railYMarginHeight = toInt(railYStyle.marginTop) + toInt(railYStyle.marginBottom);
-    CSS.set(this.scrollbarYRail, {display: ''});
+    CSS.set(this.scrollbarYRail, { display: '' });
     this.railYHeight = null;
     this.railYRatio = null;
 
     this.reach = {
       x:
-          element.scrollLeft <= 0
-              ? 'start'
-              : element.scrollLeft >= this.contentWidth - this.containerWidth
-                  ? 'end'
-                  : null,
+        element.scrollLeft <= 0
+          ? 'start'
+          : element.scrollLeft >= this.contentWidth - this.containerWidth
+          ? 'end'
+          : null,
       y:
-          element.scrollTop <= 0
-              ? 'start'
-              : element.scrollTop >= this.contentHeight - this.containerHeight
-                  ? 'end'
-                  : null,
+        element.scrollTop <= 0
+          ? 'start'
+          : element.scrollTop >= this.contentHeight - this.containerHeight
+          ? 'end'
+          : null,
     };
 
     this.isAlive = true;
@@ -166,30 +166,30 @@ export default class PerfectScrollbar {
 
     // Recalcuate negative scrollLeft adjustment
     this.negativeScrollAdjustment = this.isNegativeScroll
-        ? this.element.scrollWidth - this.element.clientWidth
-        : 0;
+      ? this.element.scrollWidth - this.element.clientWidth
+      : 0;
 
     // Recalculate rail margins
-    CSS.set(this.scrollbarXRail, {display: 'block'});
-    CSS.set(this.scrollbarYRail, {display: 'block'});
+    CSS.set(this.scrollbarXRail, { display: 'block' });
+    CSS.set(this.scrollbarYRail, { display: 'block' });
     this.railXMarginWidth =
-        toInt(CSS.get(this.scrollbarXRail).marginLeft) +
-        toInt(CSS.get(this.scrollbarXRail).marginRight);
+      toInt(CSS.get(this.scrollbarXRail).marginLeft) +
+      toInt(CSS.get(this.scrollbarXRail).marginRight);
     this.railYMarginHeight =
-        toInt(CSS.get(this.scrollbarYRail).marginTop) +
-        toInt(CSS.get(this.scrollbarYRail).marginBottom);
+      toInt(CSS.get(this.scrollbarYRail).marginTop) +
+      toInt(CSS.get(this.scrollbarYRail).marginBottom);
 
     // Hide scrollbars not to affect scrollWidth and scrollHeight
-    CSS.set(this.scrollbarXRail, {display: 'none'});
-    CSS.set(this.scrollbarYRail, {display: 'none'});
+    CSS.set(this.scrollbarXRail, { display: 'none' });
+    CSS.set(this.scrollbarYRail, { display: 'none' });
 
     updateGeometry(this);
 
     processScrollDiff(this, 'top', 0, false, true);
     processScrollDiff(this, 'left', 0, false, true);
 
-    CSS.set(this.scrollbarXRail, {display: ''});
-    CSS.set(this.scrollbarYRail, {display: ''});
+    CSS.set(this.scrollbarXRail, { display: '' });
+    CSS.set(this.scrollbarYRail, { display: '' });
   }
 
   onScroll(e) {
@@ -229,8 +229,8 @@ export default class PerfectScrollbar {
 
   removePsClasses() {
     this.element.className = this.element.className
-        .split(' ')
-        .filter((name) => !name.match(/^ps([-_].+|)$/))
-        .join(' ');
+      .split(' ')
+      .filter((name) => !name.match(/^ps([-_].+|)$/))
+      .join(' ');
   }
 }

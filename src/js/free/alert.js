@@ -1,4 +1,4 @@
-import {getjQuery, onDOMContentLoaded} from '../mdb/util';
+import { getjQuery, onDOMContentLoaded } from '../mdb/util/index';
 import EventHandler from '../mdb/dom/event-handler';
 import SelectorEngine from '../mdb/dom/selector-engine';
 import BSAlert from '../bootstrap/mdb-prefix/alert';
@@ -28,16 +28,16 @@ class Alert extends BSAlert {
     this._init();
   }
 
-  // Getters
-  static get NAME() {
-    return NAME;
-  }
-
   dispose() {
     EventHandler.off(this._element, EVENT_CLOSE_BS);
     EventHandler.off(this._element, EVENT_CLOSED_BS);
 
     super.dispose();
+  }
+
+  // Getters
+  static get NAME() {
+    return NAME;
   }
 
   // Private

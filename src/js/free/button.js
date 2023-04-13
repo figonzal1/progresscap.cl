@@ -1,4 +1,4 @@
-import {getjQuery, onDOMContentLoaded} from '../mdb/util';
+import { getjQuery, onDOMContentLoaded } from '../mdb/util/index';
 import Data from '../mdb/dom/data';
 import EventHandler from '../mdb/dom/event-handler';
 import Manipulator from '../mdb/dom/manipulator';
@@ -45,23 +45,6 @@ class Button extends BSButton {
     return NAME;
   }
 
-  // Getters
-  get _actionButton() {
-    return SelectorEngine.findOne(SELECTOR_ACTION_BUTTON, this._element);
-  }
-
-  get _buttonListElements() {
-    return SelectorEngine.find(SELECTOR_LIST_ELEMENT, this._element);
-  }
-
-  get _buttonList() {
-    return SelectorEngine.findOne(SELECTOR_LIST, this._element);
-  }
-
-  get _isTouchDevice() {
-    return 'ontouchstart' in document.documentElement;
-  }
-
   static jQueryInterface(config, options) {
     return this.each(function () {
       let data = Data.getData(this, DATA_KEY);
@@ -82,6 +65,23 @@ class Button extends BSButton {
     });
   }
 
+  // Getters
+  get _actionButton() {
+    return SelectorEngine.findOne(SELECTOR_ACTION_BUTTON, this._element);
+  }
+
+  get _buttonListElements() {
+    return SelectorEngine.find(SELECTOR_LIST_ELEMENT, this._element);
+  }
+
+  get _buttonList() {
+    return SelectorEngine.findOne(SELECTOR_LIST, this._element);
+  }
+
+  get _isTouchDevice() {
+    return 'ontouchstart' in document.documentElement;
+  }
+
   // Public
   show() {
     if (Manipulator.hasClass(this._element, CLASS_NAME_FIXED_ACTION_BTN)) {
@@ -89,7 +89,7 @@ class Button extends BSButton {
       EventHandler.trigger(this._element, EVENT_SHOW);
       // EventHandler.on(this._buttonList, EVENT_TRANSITIONEND, this._bindListOpenTransitionEnd);
       this._bindListOpenTransitionEnd();
-      Manipulator.addStyle(this._element, {height: `${this._fullContainerHeight}px`});
+      Manipulator.addStyle(this._element, { height: `${this._fullContainerHeight}px` });
       this._toggleVisibility(true);
     }
   }
@@ -125,25 +125,25 @@ class Button extends BSButton {
 
   _bindMouseEnter() {
     this._actionButton.addEventListener(
-        EVENT_MOUSEENTER,
-        // prettier-ignore
-        this._fn.mouseenter = () => {
-          if (!this._isTouchDevice) {
-            this.show();
-          }
+      EVENT_MOUSEENTER,
+      // prettier-ignore
+      this._fn.mouseenter = () => {
+        if (!this._isTouchDevice) {
+          this.show();
         }
-        // prettier-ignore
+      }
+      // prettier-ignore
     );
   }
 
   _bindMouseLeave() {
     this._element.addEventListener(
-        EVENT_MOUSELEAVE,
-        // prettier-ignore
-        this._fn.mouseleave = () => {
-          this.hide();
-        }
-        // prettier-ignore
+      EVENT_MOUSELEAVE,
+      // prettier-ignore
+      this._fn.mouseleave = () => {
+        this.hide();
+      }
+      // prettier-ignore
     );
   }
 
@@ -179,7 +179,7 @@ class Button extends BSButton {
   _toggleVisibility(isVisible) {
     const action = isVisible ? 'addClass' : 'removeClass';
     const listTranslate = isVisible ? 'translate(0)' : `translateY(${this._fullContainerHeight}px)`;
-    Manipulator.addStyle(this._buttonList, {transform: listTranslate});
+    Manipulator.addStyle(this._buttonList, { transform: listTranslate });
 
     if (this._buttonListElements) {
       this._buttonListElements.forEach((el) => Manipulator[action](el, CLASS_NAME_SHOWN));

@@ -2,7 +2,7 @@
 import updateGeometry from '../update-geometry';
 import cls from '../lib/class-names';
 import * as CSS from '../lib/css';
-import {env} from '../lib/util';
+import { env } from '../lib/util';
 
 export default function (i) {
   if (!env.supportsTouch && !env.supportsIePointer) {
@@ -21,8 +21,8 @@ export default function (i) {
       // user is perhaps trying to swipe up/down the page
 
       if (
-          (deltaY < 0 && scrollTop === i.contentHeight - i.containerHeight) ||
-          (deltaY > 0 && scrollTop === 0)
+        (deltaY < 0 && scrollTop === i.contentHeight - i.containerHeight) ||
+        (deltaY > 0 && scrollTop === 0)
       ) {
         // set prevent for mobile Chrome refresh
         return window.scrollY === 0 && deltaY > 0 && env.isChrome;
@@ -31,8 +31,8 @@ export default function (i) {
       // user is perhaps trying to swipe left/right across the page
 
       if (
-          (deltaX < 0 && scrollLeft === i.contentWidth - i.containerWidth) ||
-          (deltaX > 0 && scrollLeft === 0)
+        (deltaX < 0 && scrollLeft === i.contentWidth - i.containerWidth) ||
+        (deltaX > 0 && scrollLeft === 0)
       ) {
         return true;
       }
@@ -111,8 +111,8 @@ export default function (i) {
         const maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
         if (maxScrollTop > 0) {
           if (
-              (cursor.scrollTop > 0 && deltaY < 0) ||
-              (cursor.scrollTop < maxScrollTop && deltaY > 0)
+            (cursor.scrollTop > 0 && deltaY < 0) ||
+            (cursor.scrollTop < maxScrollTop && deltaY > 0)
           ) {
             return true;
           }
@@ -123,8 +123,8 @@ export default function (i) {
         const maxScrollLeft = cursor.scrollWidth - cursor.clientWidth;
         if (maxScrollLeft > 0) {
           if (
-              (cursor.scrollLeft > 0 && deltaX < 0) ||
-              (cursor.scrollLeft < maxScrollLeft && deltaX > 0)
+            (cursor.scrollLeft > 0 && deltaX < 0) ||
+            (cursor.scrollLeft < maxScrollLeft && deltaX > 0)
           ) {
             return true;
           }
@@ -141,7 +141,7 @@ export default function (i) {
     if (shouldHandle(e)) {
       const touch = getTouch(e);
 
-      const currentOffset = {pageX: touch.pageX, pageY: touch.pageY};
+      const currentOffset = { pageX: touch.pageX, pageY: touch.pageY };
 
       const differenceX = currentOffset.pageX - startOffset.pageX;
       const differenceY = currentOffset.pageY - startOffset.pageY;
@@ -167,7 +167,6 @@ export default function (i) {
       }
     }
   }
-
   function touchEnd() {
     if (i.settings.swipeEasing) {
       clearInterval(easingLoop);

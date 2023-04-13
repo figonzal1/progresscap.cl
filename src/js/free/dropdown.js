@@ -1,4 +1,4 @@
-import {getjQuery, onDOMContentLoaded, typeCheckConfig} from '../mdb/util';
+import { getjQuery, typeCheckConfig, onDOMContentLoaded } from '../mdb/util/index';
 import EventHandler from '../mdb/dom/event-handler';
 import SelectorEngine from '../mdb/dom/selector-engine';
 import Manipulator from '../mdb/dom/manipulator';
@@ -54,7 +54,6 @@ class Dropdown extends BSDropdown {
   constructor(element, data) {
     super(element, data);
     this._config = this._getConfig(data);
-    this._parent = Dropdown.getParentFromElement(this._element);
     this._menuStyle = '';
     this._popperPlacement = '';
     this._mdbPopperConfig = '';
@@ -67,17 +66,17 @@ class Dropdown extends BSDropdown {
     }
   }
 
-  // Getters
-  static get NAME() {
-    return NAME;
-  }
-
   dispose() {
     EventHandler.off(this._element, EVENT_SHOW);
     EventHandler.off(this._parent, EVENT_SHOWN);
     EventHandler.off(this._parent, EVENT_HIDE);
     EventHandler.off(this._parent, EVENT_HIDDEN);
     super.dispose();
+  }
+
+  // Getters
+  static get NAME() {
+    return NAME;
   }
 
   // Private
@@ -99,7 +98,7 @@ class Dropdown extends BSDropdown {
   }
 
   _getOffset() {
-    const {offset} = this._config;
+    const { offset } = this._config;
 
     if (typeof offset === 'string') {
       return offset.split(',').map((val) => Number.parseInt(val, 10));
@@ -146,8 +145,8 @@ class Dropdown extends BSDropdown {
       ...popperConfig,
       /* eslint no-extra-parens: "off" */
       ...(typeof this._config.popperConfig === 'function'
-          ? this._config.popperConfig(popperConfig)
-          : this._config.popperConfig),
+        ? this._config.popperConfig(popperConfig)
+        : this._config.popperConfig),
     };
   }
 

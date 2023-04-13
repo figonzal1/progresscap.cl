@@ -1,5 +1,5 @@
 import SelectorEngine from '../dom/selector-engine';
-import {isVisible} from './index';
+import { isVisible } from './index';
 
 class FocusTrap {
   constructor(element, options = {}, toggler) {
@@ -8,7 +8,7 @@ class FocusTrap {
     this._event = options.event || 'blur';
     this._condition = options.condition || (() => true);
     this._selector =
-        options.selector || 'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])';
+      options.selector || 'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])';
     this._onlyVisible = options.onlyVisible || false;
     this._focusableElements = [];
     this._firstElement = null;

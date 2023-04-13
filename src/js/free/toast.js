@@ -1,4 +1,4 @@
-import {getjQuery, onDOMContentLoaded} from '../mdb/util';
+import { getjQuery, onDOMContentLoaded } from '../mdb/util/index';
 import EventHandler from '../mdb/dom/event-handler';
 import SelectorEngine from '../mdb/dom/selector-engine';
 import BSToast from '../bootstrap/mdb-prefix/toast';
@@ -32,11 +32,6 @@ class Toast extends BSToast {
     this._init();
   }
 
-  // Getters
-  static get NAME() {
-    return NAME;
-  }
-
   dispose() {
     EventHandler.off(this._element, EVENT_SHOW_BS);
     EventHandler.off(this._element, EVENT_SHOWN_BS);
@@ -44,6 +39,11 @@ class Toast extends BSToast {
     EventHandler.off(this._element, EVENT_HIDDEN_BS);
 
     super.dispose();
+  }
+
+  // Getters
+  static get NAME() {
+    return NAME;
   }
 
   // Private

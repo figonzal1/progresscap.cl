@@ -1,5 +1,5 @@
 import SelectorEngine from '../dom/selector-engine';
-import {isVisible, typeCheckConfig} from './index';
+import { isVisible, typeCheckConfig } from './index';
 
 const NAME = 'Stack';
 
@@ -34,29 +34,29 @@ class Stack {
 
   get stackableElements() {
     return SelectorEngine.find(this._selector)
-        .filter((el, i) => this._options.filter(el, i))
-        .map((el) => ({el, rect: el.getBoundingClientRect()}))
-        .filter(({el, rect}) => {
-          const basicCondition = el !== this._element && isVisible(el);
-          if (this._offset === null) {
-            return basicCondition;
-          }
+      .filter((el, i) => this._options.filter(el, i))
+      .map((el) => ({ el, rect: el.getBoundingClientRect() }))
+      .filter(({ el, rect }) => {
+        const basicCondition = el !== this._element && isVisible(el);
+        if (this._offset === null) {
+          return basicCondition;
+        }
 
-          return basicCondition && this._getBoundryOffset(rect) < this._offset;
-        })
-        .sort((a, b) => {
-          return this._getBoundryOffset(b.rect) - this._getBoundryOffset(a.rect);
-        });
+        return basicCondition && this._getBoundryOffset(rect) < this._offset;
+      })
+      .sort((a, b) => {
+        return this._getBoundryOffset(b.rect) - this._getBoundryOffset(a.rect);
+      });
   }
 
   get nextElements() {
     return SelectorEngine.find(this._selector)
-        .filter((el) => el !== this._element)
-        .filter((el, i) => this._options.filter(el, i))
-        .filter((el) => {
-          this._offset = null;
-          return this._getBoundryOffset(el.getBoundingClientRect()) > this._offset;
-        });
+      .filter((el) => el !== this._element)
+      .filter((el, i) => this._options.filter(el, i))
+      .filter((el) => {
+        this._offset = null;
+        return this._getBoundryOffset(el.getBoundingClientRect()) > this._offset;
+      });
   }
 
   _getConfig(options) {
@@ -71,7 +71,7 @@ class Stack {
   }
 
   _getBoundryOffset(rect) {
-    const {position} = this._options;
+    const { position } = this._options;
 
     let parentTopOffset = 0;
     let parentBottomBoundry = window.innerHeight;

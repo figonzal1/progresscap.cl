@@ -1,4 +1,4 @@
-import {getjQuery, onDOMContentLoaded} from '../mdb/util';
+import { getjQuery, onDOMContentLoaded } from '../mdb/util/index';
 import EventHandler from '../mdb/dom/event-handler';
 import SelectorEngine from '../mdb/dom/selector-engine';
 import Manipulator from '../mdb/dom/manipulator';
@@ -29,16 +29,16 @@ class Carousel extends BSCarousel {
     this._init();
   }
 
-  // Getters
-  static get NAME() {
-    return NAME;
-  }
-
   dispose() {
     EventHandler.off(this._element, EVENT_SLIDE_BS);
     EventHandler.off(this._element, EVENT_SLID_BS);
 
     super.dispose();
+  }
+
+  // Getters
+  static get NAME() {
+    return NAME;
   }
 
   // Private

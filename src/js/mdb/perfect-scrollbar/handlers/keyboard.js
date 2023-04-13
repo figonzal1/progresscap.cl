@@ -2,14 +2,14 @@
 
 import * as DOM from '../lib/dom';
 import updateGeometry from '../update-geometry';
-import {isEditable} from '../lib/util';
+import { isEditable } from '../lib/util';
 
 export default function (i) {
   const element = i.element;
 
   const elementHovered = () => DOM.matches(element, ':hover');
   const scrollbarFocused = () =>
-      DOM.matches(i.scrollbarX, ':focus') || DOM.matches(i.scrollbarY, ':focus');
+    DOM.matches(i.scrollbarX, ':focus') || DOM.matches(i.scrollbarY, ':focus');
 
   function shouldPreventDefault(deltaX, deltaY) {
     const scrollTop = Math.floor(element.scrollTop);
@@ -18,8 +18,8 @@ export default function (i) {
         return false;
       }
       if (
-          (scrollTop === 0 && deltaY > 0) ||
-          (scrollTop >= i.contentHeight - i.containerHeight && deltaY < 0)
+        (scrollTop === 0 && deltaY > 0) ||
+        (scrollTop >= i.contentHeight - i.containerHeight && deltaY < 0)
       ) {
         return !i.settings.wheelPropagation;
       }
@@ -31,8 +31,8 @@ export default function (i) {
         return false;
       }
       if (
-          (scrollLeft === 0 && deltaX < 0) ||
-          (scrollLeft >= i.contentWidth - i.containerWidth && deltaX > 0)
+        (scrollLeft === 0 && deltaX < 0) ||
+        (scrollLeft >= i.contentWidth - i.containerWidth && deltaX > 0)
       ) {
         return !i.settings.wheelPropagation;
       }
@@ -50,8 +50,8 @@ export default function (i) {
     }
 
     let activeElement = document.activeElement
-        ? document.activeElement
-        : i.ownerDocument.activeElement;
+      ? document.activeElement
+      : i.ownerDocument.activeElement;
     if (activeElement) {
       if (activeElement.tagName === 'IFRAME') {
         activeElement = activeElement.contentDocument.activeElement;

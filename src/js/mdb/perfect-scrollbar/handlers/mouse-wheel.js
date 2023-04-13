@@ -3,7 +3,7 @@
 import * as CSS from '../lib/css';
 import cls from '../lib/class-names';
 import updateGeometry from '../update-geometry';
-import {env} from '../lib/util';
+import { env } from '../lib/util';
 
 export default function (i) {
   const element = i.element;
@@ -82,8 +82,8 @@ export default function (i) {
         const maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
         if (maxScrollTop > 0) {
           if (
-              (cursor.scrollTop > 0 && deltaY < 0) ||
-              (cursor.scrollTop < maxScrollTop && deltaY > 0)
+            (cursor.scrollTop > 0 && deltaY < 0) ||
+            (cursor.scrollTop < maxScrollTop && deltaY > 0)
           ) {
             return true;
           }
@@ -94,8 +94,8 @@ export default function (i) {
         const maxScrollLeft = cursor.scrollWidth - cursor.clientWidth;
         if (maxScrollLeft > 0) {
           if (
-              (cursor.scrollLeft > 0 && deltaX < 0) ||
-              (cursor.scrollLeft < maxScrollLeft && deltaX > 0)
+            (cursor.scrollLeft > 0 && deltaX < 0) ||
+            (cursor.scrollLeft < maxScrollLeft && deltaX > 0)
           ) {
             return true;
           }

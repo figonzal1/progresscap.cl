@@ -1,4 +1,4 @@
-import {element, getjQuery, onDOMContentLoaded} from '../mdb/util';
+import { element, getjQuery, onDOMContentLoaded } from '../mdb/util/index';
 import Data from '../mdb/dom/data';
 import EventHandler from '../mdb/dom/event-handler';
 import Manipulator from '../mdb/dom/manipulator';
@@ -64,44 +64,9 @@ class Input {
 
   get input() {
     const inputElement =
-        SelectorEngine.findOne('input', this._element) ||
-        SelectorEngine.findOne('textarea', this._element);
+      SelectorEngine.findOne('input', this._element) ||
+      SelectorEngine.findOne('textarea', this._element);
     return inputElement;
-  }
-
-  static activate(instance) {
-    return function (event) {
-      instance._activate(event);
-    };
-  }
-
-  static deactivate(instance) {
-    return function (event) {
-      instance._deactivate(event);
-    };
-  }
-
-  static jQueryInterface(config, options) {
-    return this.each(function () {
-      let data = Data.getData(this, DATA_KEY);
-      const _config = typeof config === 'object' && config;
-      if (!data && /dispose/.test(config)) {
-        return;
-      }
-      if (!data) {
-        data = new Input(this, _config);
-      }
-      if (typeof config === 'string') {
-        if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
-        }
-        data[config](options);
-      }
-    });
-  }
-
-  static getInstance(element) {
-    return Data.getData(element, DATA_KEY);
   }
 
   // Public
@@ -117,23 +82,6 @@ class Input {
     this._getCounter();
     this._initiated = true;
   }
-
-  // Private
-
-  /*
-  _getIcons() {
-    this._leadingIcon = SelectorEngine.findOne('i.leading', this._element);
-
-    if (this._leadingIcon !== null) {
-      this._applyLeadingIcon();
-    }
-  }
-
-  _applyLeadingIcon() {
-    this._label.innerHTML = ` ${this._label.innerHTML}`;
-    this._label.insertBefore(this._leadingIcon, this._label.firstChild);
-  }
-  */
 
   update() {
     this._getLabelData();
@@ -159,6 +107,23 @@ class Input {
     this._element = null;
   }
 
+  // Private
+
+  /*
+  _getIcons() {
+    this._leadingIcon = SelectorEngine.findOne('i.leading', this._element);
+
+    if (this._leadingIcon !== null) {
+      this._applyLeadingIcon();
+    }
+  }
+
+  _applyLeadingIcon() {
+    this._label.innerHTML = ` ${this._label.innerHTML}`;
+    this._label.insertBefore(this._leadingIcon, this._label.firstChild);
+  }
+  */
+
   _getLabelData() {
     this._label = SelectorEngine.findOne('label', this._element);
     if (this._label === null) {
@@ -166,6 +131,7 @@ class Input {
     } else {
       this._getLabelWidth();
       this._getLabelPositionInInputGroup();
+      this._toggleDefaultDatePlaceholder();
     }
   }
 
@@ -199,6 +165,22 @@ class Input {
       const actualLength = this.input.value.length;
       this._counterElement.innerHTML = `${actualLength} / ${this._maxLength}`;
     });
+  }
+
+  _toggleDefaultDatePlaceholder(input = this.input) {
+    const isTypeDate = input.getAttribute('type') === 'date';
+
+    if (!isTypeDate) {
+      return;
+    }
+
+    const isInputFocused = document.activeElement === input;
+
+    if (!isInputFocused && !input.value) {
+      input.style.opacity = 0;
+    } else {
+      input.style.opacity = 1;
+    }
   }
 
   _showPlaceholder() {
@@ -267,6 +249,7 @@ class Input {
       if (input.value !== '') {
         Manipulator.addClass(input, CLASSNAME_ACTIVE);
       }
+      this._toggleDefaultDatePlaceholder(input);
     });
   }
 
@@ -283,8 +266,8 @@ class Input {
       if (prevLabelWidth !== this._labelWidth) {
         this._notchMiddle = SelectorEngine.findOne('.form-notch-middle', event.target.parentNode);
         this._notchLeading = SelectorEngine.findOne(
-            SELECTOR_NOTCH_LEADING,
-            event.target.parentNode
+          SELECTOR_NOTCH_LEADING,
+          event.target.parentNode
         );
         this._applyNotch();
       }
@@ -293,9 +276,52 @@ class Input {
 
   _deactivate(event) {
     const input = event ? event.target : this.input;
+
     if (input.value === '') {
       input.classList.remove(CLASSNAME_ACTIVE);
     }
+    this._toggleDefaultDatePlaceholder(input);
+  }
+
+  static activate(instance) {
+    return function (event) {
+      instance._activate(event);
+    };
+  }
+
+  static deactivate(instance) {
+    return function (event) {
+      instance._deactivate(event);
+    };
+  }
+
+  static jQueryInterface(config, options) {
+    return this.each(function () {
+      let data = Data.getData(this, DATA_KEY);
+      const _config = typeof config === 'object' && config;
+      if (!data && /dispose/.test(config)) {
+        return;
+      }
+      if (!data) {
+        data = new Input(this, _config);
+      }
+      if (typeof config === 'string') {
+        if (typeof data[config] === 'undefined') {
+          throw new TypeError(`No method named "${config}"`);
+        }
+        data[config](options);
+      }
+    });
+  }
+
+  static getInstance(element) {
+    return Data.getData(element, DATA_KEY);
+  }
+
+  static getOrCreateInstance(element, config = {}) {
+    return (
+      this.getInstance(element) || new this(element, typeof config === 'object' ? config : null)
+    );
   }
 }
 

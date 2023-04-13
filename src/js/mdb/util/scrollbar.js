@@ -23,14 +23,14 @@ const hide = (width = getWidth()) => {
   _setElementAttributes('body', 'paddingRight', (calculatedValue) => calculatedValue + width);
   // trick: We adjust positive paddingRight and negative marginRight to sticky-top elements, to keep shown fullwidth
   _setElementAttributes(
-      SELECTOR_FIXED_CONTENT,
-      'paddingRight',
-      (calculatedValue) => calculatedValue + width
+    SELECTOR_FIXED_CONTENT,
+    'paddingRight',
+    (calculatedValue) => calculatedValue + width
   );
   _setElementAttributes(
-      SELECTOR_STICKY_CONTENT,
-      'marginRight',
-      (calculatedValue) => calculatedValue - width
+    SELECTOR_STICKY_CONTENT,
+    'marginRight',
+    (calculatedValue) => calculatedValue - width
   );
 };
 
@@ -80,4 +80,4 @@ const isBodyOverflowing = () => {
   return getWidth() > 0;
 };
 
-export {getWidth, hide, isBodyOverflowing, reset};
+export { getWidth, hide, isBodyOverflowing, reset };

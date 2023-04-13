@@ -3,7 +3,7 @@ header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header("X-XSS-Protection: 1; mode=block");
 header("Referrer-Policy: strict-origin-when-cross-origin");
-header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' http://*.bluehosting.cl data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://use.fontawesome.com https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://use.fontawesome.com/");
+header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' http://*.bluehosting.cl data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/");
 header("Permissions-Policy: fullscreen=(), geolocation=(), camera=(), microphone=()");
 header('Accept-Encoding: gzip, compress, br');
 ?>
@@ -33,13 +33,13 @@ header('Accept-Encoding: gzip, compress, br');
     <meta name="theme-color" content="#ffffff">
 
     <!-- Font Awesome -->
-    <link href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" rel="preload stylesheet" as="style" type="text/css" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="preload stylesheet" as="style" type="text/css" crossorigin />
 
     <!-- Google Fonts Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="preload" as="font" crossorigin />
 
     <!-- CUSTOM MDB -->
-    <link rel="preload stylesheet" href="src/scss/mdb.free.min.css" as="style" type="text/css" crossorigin>
+    <link rel="preload stylesheet" href="src/scss/mdb.free.css" as="style" type="text/css" crossorigin>
 
     <!--suppress CssUnusedSymbol -->
     <style>
@@ -544,8 +544,6 @@ header('Accept-Encoding: gzip, compress, br');
 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js" async></script>
-    <!-- JQUERY -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" async>
         $(window).scroll(function() {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 800);

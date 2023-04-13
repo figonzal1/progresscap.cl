@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  */
 
-import {getjQuery} from '../util';
+import { getjQuery } from '../util/index';
 
 /**
  * ------------------------------------------------------------------------
@@ -107,7 +107,7 @@ function bootstrapDelegationHandler(element, selector, fn) {
   return function handler(event) {
     const domElements = element.querySelectorAll(selector);
 
-    for (let {target} = event; target && target !== this; target = target.parentNode) {
+    for (let { target } = event; target && target !== this; target = target.parentNode) {
       for (let i = domElements.length; i--; '') {
         if (domElements[i] === target) {
           event.delegateTarget = target;
@@ -172,9 +172,9 @@ function addHandler(element, originalTypeEvent, handler, delegationFn, oneOff) {
   }
 
   const [delegation, originalHandler, typeEvent] = normalizeParams(
-      originalTypeEvent,
-      handler,
-      delegationFn
+    originalTypeEvent,
+    handler,
+    delegationFn
   );
   const events = getEvent(element);
   const handlers = events[typeEvent] || (events[typeEvent] = {});
@@ -188,8 +188,8 @@ function addHandler(element, originalTypeEvent, handler, delegationFn, oneOff) {
 
   const uid = getUidEvent(originalHandler, originalTypeEvent.replace(namespaceRegex, ''));
   const fn = delegation
-      ? bootstrapDelegationHandler(element, handler, delegationFn)
-      : bootstrapHandler(element, handler);
+    ? bootstrapDelegationHandler(element, handler, delegationFn)
+    : bootstrapHandler(element, handler);
 
   fn.delegationSelector = delegation ? handler : null;
   fn.originalHandler = originalHandler;
@@ -238,9 +238,9 @@ const EventHandler = {
     }
 
     const [delegation, originalHandler, typeEvent] = normalizeParams(
-        originalTypeEvent,
-        handler,
-        delegationFn
+      originalTypeEvent,
+      handler,
+      delegationFn
     );
     const inNamespace = typeEvent !== originalTypeEvent;
     const events = getEvent(element);

@@ -1,93 +1,89 @@
 /*!
- * Bootstrap manipulator.js v5.0.1 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+ * Bootstrap manipulator.js v5.2.3 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined'
-        ? (module.exports = factory())
-        : typeof define === 'function' && define.amd
-            ? define(factory)
-            : ((global = typeof globalThis !== 'undefined' ? globalThis : global || self),
-                (global.Manipulator = factory()));
+  typeof exports === 'object' && typeof module !== 'undefined'
+    ? (module.exports = factory())
+    : typeof define === 'function' && define.amd
+    ? define(factory)
+    : ((global = typeof globalThis !== 'undefined' ? globalThis : global || self),
+      (global.Manipulator = factory()));
 })(this, function () {
-    'use strict';
+  'use strict';
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.1): dom/manipulator.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    function normalizeData(val) {
-        if (val === 'true') {
-            return true;
-        }
-
-        if (val === 'false') {
-            return false;
-        }
-
-        if (val === Number(val).toString()) {
-            return Number(val);
-        }
-
-        if (val === '' || val === 'null') {
-            return null;
-        }
-
-        return val;
+  /**
+   * --------------------------------------------------------------------------
+   * Bootstrap (v5.2.3): dom/manipulator.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * --------------------------------------------------------------------------
+   */
+  function normalizeData(value) {
+    if (value === 'true') {
+      return true;
     }
 
-    function normalizeDataKey(key) {
-        return key.replace(/[A-Z]/g, (chr) => `-${chr.toLowerCase()}`);
+    if (value === 'false') {
+      return false;
     }
 
-    const Manipulator = {
-        setDataAttribute(element, key, value) {
-            element.setAttribute(`data-bs-${normalizeDataKey(key)}`, value);
-        },
+    if (value === Number(value).toString()) {
+      return Number(value);
+    }
 
-        removeDataAttribute(element, key) {
-            element.removeAttribute(`data-bs-${normalizeDataKey(key)}`);
-        },
+    if (value === '' || value === 'null') {
+      return null;
+    }
 
-        getDataAttributes(element) {
-            if (!element) {
-                return {};
-            }
+    if (typeof value !== 'string') {
+      return value;
+    }
 
-            const attributes = {};
-            Object.keys(element.dataset)
-                .filter((key) => key.startsWith('bs'))
-                .forEach((key) => {
-                    let pureKey = key.replace(/^bs/, '');
-                    pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1, pureKey.length);
-                    attributes[pureKey] = normalizeData(element.dataset[key]);
-                });
-            return attributes;
-        },
+    try {
+      return JSON.parse(decodeURIComponent(value));
+    } catch (_unused) {
+      return value;
+    }
+  }
 
-        getDataAttribute(element, key) {
-            return normalizeData(element.getAttribute(`data-bs-${normalizeDataKey(key)}`));
-        },
+  function normalizeDataKey(key) {
+    return key.replace(/[A-Z]/g, (chr) => `-${chr.toLowerCase()}`);
+  }
 
-        offset(element) {
-            const rect = element.getBoundingClientRect();
-            return {
-                top: rect.top + document.body.scrollTop,
-                left: rect.left + document.body.scrollLeft,
-            };
-        },
+  const Manipulator = {
+    setDataAttribute(element, key, value) {
+      element.setAttribute(`data-bs-${normalizeDataKey(key)}`, value);
+    },
 
-        position(element) {
-            return {
-                top: element.offsetTop,
-                left: element.offsetLeft,
-            };
-        },
-    };
+    removeDataAttribute(element, key) {
+      element.removeAttribute(`data-bs-${normalizeDataKey(key)}`);
+    },
 
-    return Manipulator;
+    getDataAttributes(element) {
+      if (!element) {
+        return {};
+      }
+
+      const attributes = {};
+      const bsKeys = Object.keys(element.dataset).filter(
+        (key) => key.startsWith('bs') && !key.startsWith('bsConfig')
+      );
+
+      for (const key of bsKeys) {
+        let pureKey = key.replace(/^bs/, '');
+        pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1, pureKey.length);
+        attributes[pureKey] = normalizeData(element.dataset[key]);
+      }
+
+      return attributes;
+    },
+
+    getDataAttribute(element, key) {
+      return normalizeData(element.getAttribute(`data-bs-${normalizeDataKey(key)}`));
+    },
+  };
+
+  return Manipulator;
 });
 //# sourceMappingURL=manipulator.js.map

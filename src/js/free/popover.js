@@ -1,4 +1,4 @@
-import {getjQuery, onDOMContentLoaded} from '../mdb/util';
+import { getjQuery, onDOMContentLoaded } from '../mdb/util/index';
 import EventHandler from '../mdb/dom/event-handler';
 import SelectorEngine from '../mdb/dom/selector-engine';
 import BSPopover from '../bootstrap/mdb-prefix/popover';
@@ -34,11 +34,6 @@ class Popover extends BSPopover {
     this._init();
   }
 
-  // Getters
-  static get NAME() {
-    return NAME;
-  }
-
   dispose() {
     EventHandler.off(this.element, EVENT_SHOW_BS);
     EventHandler.off(this.element, EVENT_SHOWN_BS);
@@ -47,6 +42,11 @@ class Popover extends BSPopover {
     EventHandler.off(this.element, EVENT_INSERTED_BS);
 
     super.dispose();
+  }
+
+  // Getters
+  static get NAME() {
+    return NAME;
   }
 
   // Private
