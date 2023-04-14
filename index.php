@@ -3,7 +3,7 @@ header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header("X-XSS-Protection: 1; mode=block");
 header("Referrer-Policy: strict-origin-when-cross-origin");
-header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' http://*.bluehosting.cl data:;frame-src 'self' https://*.google.com/  ;font-src 'self' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com ;style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/");
+header("Content-Security-Policy: default-src 'self' https://*.google.com/ ;img-src 'self' http://*.bluehosting.cl data:;frame-src 'self' https://*.google.com/ https://www.mercadopago.cl  ;font-src 'self' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://www.mercadopago.cl ;style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/");
 header("Permissions-Policy: fullscreen=(), geolocation=(), camera=(), microphone=()");
 header('Accept-Encoding: gzip, compress, br');
 ?>
@@ -106,19 +106,15 @@ header('Accept-Encoding: gzip, compress, br');
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Auriculoterapia <span class="badge badge-primary">Nuevo</span></a>
-                                </li>
-
-                                <li>
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Fonoaudiología Neonatal <span class="badge badge-primary">Nuevo</span></a>
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Rechazo Alimentario <span class="badge badge-secondary">Nueva versión</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Rechazo Alimentario <span class="badge badge-danger">Nueva versión</span></a>
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Anatomofisiología de la articulación <span class="badge badge-secondary">Nueva versión</span></a>
+                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Anatomofisiología de la articulación <span class="badge badge-danger">Nueva versión</span></a>
                                 </li>
                                 
                                 <li>
@@ -241,42 +237,6 @@ header('Accept-Encoding: gzip, compress, br');
                     </div>
                 </div>
 
-                <div class="carousel-item" data-mdb-interval="15000">
-                    <div class="mask dark-bg w-100">
-
-                        <div class=" d-flex justify-content-center align-items-center h-100">
-
-                            <div class="col-md-7 col-sm-12">
-                                <div class="d-row text-center text-white px-5">
-                                    <h2 class="h1">Auriculoterapia</h2>
-                                    <div class="mx-5 mb-4">
-                                        <p class="px-5 pt-3 lead d-none d-sm-block">
-                                            Curso presencial de Auriculoterapia, dirigido a profesionales que busquen formarse como auriculoterapeutas
-                                        </p>
-                                    </div>
-
-                                    <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
-                                        curso</a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-sm-12 d-none d-md-block">
-
-                                <picture>
-
-                                    <source srcset="img/cursos/auriculoterapia.png" type="image/webp">
-                                    <source srcset="img/cursos/auriculoterapia.webp" type="image/png">
-
-                                    <img src="img/cursos/auriculoterapia.webp" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Auriculoterapia" style="width: 70%;">
-                                </picture>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -362,12 +322,10 @@ header('Accept-Encoding: gzip, compress, br');
 
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
-
+                            
                             <?php include_once("src/html/porteo_ergonomico.html"); ?>
 
                             <?php include_once("src/html/capsulas.html"); ?>
-
-                            <?php include_once("src/html/auriculoterapia.html"); ?>
 
                             <?php include_once("src/html/neonatal.html"); ?>
 
@@ -377,6 +335,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <?php include_once("src/html/blw.html"); ?>
 
+                            <?php include_once("src/html/fono_pie.html"); ?>
                         </div>
                     </div>
                 </div>

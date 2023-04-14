@@ -48,10 +48,55 @@
 			</ul>
 			</p>
 
-
-			<a class="btn btn-lg btn-primary mt-auto" target="_blank" rel="noopener noreferrer nofollow"
+			<a class="btn btn-lg btn-outline-info mt-auto mb-2" target="_blank" rel="noopener noreferrer nofollow"
 				href="https://drive.google.com/file/d/1PUudivdk_jNUPPmXKuSclK8GSRqnQLKo/view"><em
 					class="fas fa-plus fa-lg me-2"></em>información</a>
+
+
+			<button type="button" class="btn btn-primary btn-lg" data-mdb-toggle="modal"
+				data-mdb-target="#neonatalModal"><em class="fas fa-cart-shopping fa-lg me-2"></em>Comprar</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="neonatalModal" tabindex="-1" aria-labelledby="neoModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="neoModalLabel">Mercado Pago</h5>
+							<button type="button" class="btn-close" data-mdb-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+
+							<div class="d-flex flex-row justify-content-center align-items-center">
+
+								<div class="card border border-dark text-center me-3">
+									<div class="card-header">Plan Individual</div>
+									<div class="card-body">
+										<h5 class="card-title">$300.000 clp por persona</h5>
+										<script src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
+											data-preference-id="708921149-c72269f0-17eb-4d14-a465-49271c76abf9"
+											data-source="button">
+											</script>
+									</div>
+								</div>
+
+								<div class="card border border-dark text-center">
+									<div class="card-header">Plan Grupal/Convenios</div>
+									<div class="card-body">
+										<h5 class="card-title">$250.000 clp por persona</h5>
+										<script src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
+											data-preference-id="708921149-fb80c520-a4fc-47ae-8748-9f5d0c14f12d"
+											data-source="button">
+											</script>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="card-footer">
