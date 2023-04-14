@@ -161,7 +161,6 @@ header('Accept-Encoding: gzip, compress, br');
             <ol class="carousel-indicators">
                 <li class="active" data-mdb-slide-to="0" data-mdb-target="#introCarousel"></li>
                 <li data-mdb-slide-to="1" data-mdb-target="#introCarousel"></li>
-                <li data-mdb-slide-to="2" data-mdb-target="#introCarousel"></li>
             </ol>
 
             <!-- Imagenes -->
@@ -230,10 +229,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 </picture>
 
                             </div>
-
-
                         </div>
-
                     </div>
                 </div>
 
