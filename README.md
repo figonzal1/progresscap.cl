@@ -21,10 +21,6 @@
   <a href="https://img.shields.io/uptimerobot/status/m787821954-618519f14210c80c89778977?label=website%20status">
     <img alt="Uptime Robot status" src="https://img.shields.io/uptimerobot/status/m787821954-618519f14210c80c89778977?label=website%20status">
   </a>
-  
-  <a href="https://securityheaders.com/?q=progresscap.cl&hide=on&followRedirects=on">
-  <img alt="Security Headers" src="https://img.shields.io/security-headers?url=https%3A%2F%2Fprogresscap.cl">
-  </a>
 
   <a href="https://wakatime.com/badge/github/figonzal1/progresscap.cl">
     <img src="https://wakatime.com/badge/github/figonzal1/progresscap.cl.svg" alt="wakatime">
