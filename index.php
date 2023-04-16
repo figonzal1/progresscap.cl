@@ -116,7 +116,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <li>
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Anatomofisiología de la articulación <span class="badge badge-danger">Nueva versión</span></a>
                                 </li>
-                                
+
                                 <li>
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Método BLW y BLISS <span class="badge badge-success">Liberado</span></a>
                                 </li>
@@ -318,7 +318,9 @@ header('Accept-Encoding: gzip, compress, br');
 
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
-                            
+
+                            <?php include_once("src/html/fono_pie.html"); ?>
+
                             <?php include_once("src/html/porteo_ergonomico.html"); ?>
 
                             <?php include_once("src/html/capsulas.html"); ?>
@@ -330,8 +332,6 @@ header('Accept-Encoding: gzip, compress, br');
                             <?php include_once("src/html/anatomofisiologia.html"); ?>
 
                             <?php include_once("src/html/blw.html"); ?>
-
-                            <?php include_once("src/html/fono_pie.html"); ?>
                         </div>
                     </div>
                 </div>
@@ -467,7 +467,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <!-- IG -->
                             <a class="btn btn-floating btn-lg m-1 text-white shadow-1-strong" href="https://www.instagram.com/cap.progress" rel="noopener noreferrer nofollow" role="button" style="background-color: #E1306C" target="_blank"><em class="fab fa-instagram fa-lg"></em></a>
-                            
+
                             <!-- Youtube -->
                             <a class="btn btn-floating btn-lg m-1 text-white shadow-1-strong" href="https://www.youtube.com/@progresscap" rel="noopener noreferrer nofollow" role="button" style="background-color: #E1306C" target="_blank"><em class="fab fa-youtube fa-lg"></em></a>
                         </div>
