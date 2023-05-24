@@ -240,7 +240,7 @@ header('Accept-Encoding: gzip, compress, br');
                         <h3 class="h1">Bienvenido a Progress</h3>
 
                         <h3 class="mt-5 fw-bold">Quienes Somos</h3>
-                        <p class="text-muted mb-5 lead">Somos un <strong>Organismo Técnico de Capacitación</strong> (OTEC) enfocado en el desarrollo profesional, principalmente en áreas de salud y educación.</p>
+                        <p class="text-muted mb-5 lead">Somos un <span class="fw-bold">Organismo Técnico de Capacitación</span> (OTEC) enfocado en el desarrollo profesional, principalmente en áreas de salud y educación.</p>
 
                         <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
 
