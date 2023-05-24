@@ -114,10 +114,6 @@ header('Accept-Encoding: gzip, compress, br');
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Anatomofisiología de la articulación <span class="badge badge-danger">Nueva versión</span></a>
-                                </li>
-
-                                <li>
                                     <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Método BLW y BLISS <span class="badge badge-success">Liberado</span></a>
                                 </li>
                             </ul>
@@ -244,10 +240,7 @@ header('Accept-Encoding: gzip, compress, br');
                         <h3 class="h1">Bienvenido a Progress</h3>
 
                         <h3 class="mt-5 fw-bold">Quienes Somos</h3>
-                        <p class="text-muted mb-5 lead">Somos un <strong>Organismo Técnico de Capaticatión</strong> (OTEC) enfocado en
-                            la
-                            capacitación de
-                            profesionales de las áreas de salud y educación.</p>
+                        <p class="text-muted mb-5 lead">Somos un <strong>Organismo Técnico de Capacitación</strong> (OTEC) enfocado en el desarrollo profesional, principalmente en áreas de salud y educación.
 
                         <div class="d-flex justify-content-start align-items-start align-self-stretch mb-4">
 
@@ -257,7 +250,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <div class="ms-4 flex-grow-1">
                                 <h4 class="h4 mb-3 fw-bold">Cursos Online</h4>
-                                <p class="text-muted lead">Ofrecemos dos tipos de cursos: sincrónicos y asincrónicos.</p>
+                                <p class="text-muted lead">Cursos en modalidad online sincrónica o asincrónica.</p>
                             </div>
 
                         </div>
@@ -270,7 +263,7 @@ header('Accept-Encoding: gzip, compress, br');
 
                             <div class="ms-4 flex-grow-1">
                                 <h4 class="h4 mb-3 fw-bold">Cursos certificados</h4>
-                                <p class="text-muted lead">Nuestros cursos cuentan con certificación OTEC.</p>
+                                <p class="text-muted lead">Nuestros cursos cuentan con certificación NCH2728, SENCE.</p>
                             </div>
 
                         </div>
@@ -298,6 +291,7 @@ header('Accept-Encoding: gzip, compress, br');
                         </picture>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -328,8 +322,6 @@ header('Accept-Encoding: gzip, compress, br');
                             <?php include_once("src/html/neonatal.html"); ?>
 
                             <?php include_once("src/html/ra.html"); ?>
-
-                            <?php include_once("src/html/anatomofisiologia.html"); ?>
 
                             <?php include_once("src/html/blw.html"); ?>
                         </div>
