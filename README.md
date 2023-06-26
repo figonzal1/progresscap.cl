@@ -18,8 +18,8 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/figonzal1/progresscap.cl?color=yellow">
   </a>
 
-  <a href="https://img.shields.io/uptimerobot/status/m787821954-618519f14210c80c89778977?label=website%20status">
-    <img alt="Uptime Robot status" src="https://img.shields.io/uptimerobot/status/m787821954-618519f14210c80c89778977?label=website%20status">
+  <a href="https://img.shields.io/uptimerobot/status/m794664525-070d096a44353c240f25c65e?label=website%20status">
+    <img alt="Uptime Robot status" src="https://img.shields.io/uptimerobot/status/m794664525-070d096a44353c240f25c65e?label=website%20status">
   </a>
 
   <a href="https://wakatime.com/badge/github/figonzal1/progresscap.cl">
