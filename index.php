@@ -104,6 +104,8 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
 
+                            <?php include_once("src/html/cursos/frenillo_lingual.html"); ?>
+
                             <?php include_once("src/html/cursos/fono_pie.html"); ?>
 
                             <?php include_once("src/html/cursos/porteo_ergonomico.html"); ?>
