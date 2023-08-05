@@ -10,227 +10,18 @@ header('Accept-Encoding: gzip, compress, br');
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
-    <title>Capacitaciones Progress</title>
-    <meta name="description" content="Capacitaciones progress" />
-    <!-- BING -->
-    <meta name="msvalidate.01" content="2A85F96AE86AC763C3A8DA5D21CE03B2" />
-    <link rel="canonical" href="https://www.progresscap.cl/" />
-
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/img/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="preload stylesheet" as="style" type="text/css" crossorigin />
-
-    <!-- Google Fonts Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="preload" as="font" crossorigin />
-
-    <!-- CUSTOM MDB -->
-    <link rel="preload stylesheet" href="src/scss/mdb.free.css" as="style" type="text/css" crossorigin>
-
-    <!--suppress CssUnusedSymbol -->
-    <style>
-        .dark-bg {
-            background: linear-gradient(180deg,
-                    rgba(73, 119, 159, 0.9),
-                    rgba(255, 177, 0, 0.8) 100%);
-        }
-
-        #introCarousel,
-        .carousel-inner,
-        .carousel-item,
-        .carousel-item.active {
-            height: 100vh;
-        }
-
-        .webp {
-            background-image: url('img/background2-min.webp');
-        }
-
-        .no-webp {
-            background-image: url('img/background2-min.jpg');
-        }
-    </style>
-</head>
+<?php require_once("src/html/common/header.html") ?>
 
 <body>
 
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-default">
-            <div class="container">
-                <a class="navbar-brand" href="https://www.progresscap.cl">
-
-                    <picture>
-
-                        <source srcset="img/progress_logo_completo-min.webp" type="image/webp">
-                        <source srcset="img/progress_logo_completo-min.jpg" type="image/jpeg">
-                        <!--suppress CheckImageSize -->
-                        <img src="img/progress_logo_completo-min.jpg" height="60" alt="Progress Cap Logo" loading="lazy">
-                    </picture>
-
-
-                </a>
-                <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-mdb-target="#navbarNavAltMarkup" data-mdb-toggle="collapse" type="button">
-                    <em class="fas fa-bars"></em>
-                </button>
-
-                <!-- RIGH MENU -->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav navbar-nav-scroll">
-                        <a href="https://www.progresscap.cl/#inicio" aria-current="page" class="nav-link active">Inicio</a>
-                        <a href="https://www.progresscap.cl/#acerca" aria-current="page" class="nav-link">Acerca</a>
-                        <div class="dropdown">
-                            <a href="https://www.progresscap.cl/#cursos" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Cursos</a>
-
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Porteo Ergonómico <span class="badge badge-success">Liberado</span></a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Cápsulas de Aprendizaje <span class="badge badge-success">Liberado</span></a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Fonoaudiología Neonatal <span class="badge badge-primary">Nuevo</span></a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Diplomado Rechazo Alimentario <span class="badge badge-danger">Nueva versión</span></a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="https://www.progresscap.cl/#cursos">Curso Método BLW y BLISS <span class="badge badge-success">Liberado</span></a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="dropdown">
-                            <a href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Contenido gratuito</a>
-
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="https://www.youtube.com/@progresscap" rel="noopener noreferrer" target="_blank">Canal de Youtube</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <a href="https://www.progresscap.cl/#contacto" aria-current="page" class="nav-link">Contacto</a>
-                    </div>
-
-                    <!-- Left Icons -->
-                    <div class="navbar-nav d-flex flex-row ms-auto">
-                        <a href="https://www.moodle.progresscap.cl" rel="noopener noreferrer" target="_blank" class="nav-link px-0">Moodle</a>
-                        <a class="nav-link px-0 ms-3" href="https://www.instagram.com/cap.progress/" rel="noopener noreferrer" target="_blank"><em class="fab fa-instagram"></em></a>
-                        <a class="nav-link px-0 ms-3" href="https://www.youtube.com/@progresscap" rel="noopener noreferrer" target="_blank"><em class="fab fa-youtube"></em></a>
-                    </div>
-                </div>
-
-            </div>
-
-        </nav>
+        <?php require_once("src/html/common/nav.html") ?>
     </header>
 
 
     <main id="inicio">
 
-        <!-- Background Image -->
-        <!-- Carrousel -->
-        <div class="carousel slide shadow-2-strong webp" data-mdb-ride="carousel" id="introCarousel">
-
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
-                <li class="active" data-mdb-slide-to="0" data-mdb-target="#introCarousel"></li>
-                <li data-mdb-slide-to="1" data-mdb-target="#introCarousel"></li>
-            </ol>
-
-            <!-- Imagenes -->
-            <div class="carousel-inner">
-
-                <div class="carousel-item active" data-mdb-interval="15000">
-                    <div class="mask dark-bg w-100">
-
-                        <div class="d-flex justify-content-center align-items-center h-100">
-
-                            <div class="col-md-7 col-sm-12">
-                                <div class="d-row text-center text-white px-5">
-                                    <h2 class="h1">Diplomado Rechazo Alimentario</h2>
-                                    <div class="mx-5 mb-4">
-                                        <p class="px-5 pt-3 lead d-none d-sm-block">
-                                            Nueva versión del diplomado de rechazo alimentario. ¡Inscríbete!
-                                        </p>
-                                    </div>
-                                    <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
-                                        curso</a>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-sm-12 d-none d-md-block">
-
-                                <picture>
-                                    <source srcset="img/cursos/ra_diplomado.png" type="image/png">
-                                    <source srcset="img/cursos/ra_diplomado.webp" type="image/webp">
-
-                                    <!--suppress CheckImageSize -->
-                                    <img src="img/cursos/ra_diplomado.png" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Porteo Ergonomico" style="width: 70%;">
-                                </picture>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="carousel-item" data-mdb-interval="15000">
-                    <div class="mask dark-bg w-100">
-
-                        <div class="d-flex justify-content-center align-items-center h-100">
-
-                            <div class="col-md-7 col-sm-12">
-                                <div class="d-row text-center text-white px-5">
-                                    <h2 class="h1">Asesor/a en Porteo Ergonómico</h2>
-                                    <div class="mx-5 mb-4">
-                                        <p class="px-5 pt-3 lead d-none d-sm-block">
-                                            Curso online, dirigido a profesionales de la salud que quieran formarse como Asesores/as de porteo ergonómico
-                                        </p>
-                                    </div>
-                                    <a class="btn btn-lg btn-secondary mt-auto" href="https://www.progresscap.cl/#cursos">Ver
-                                        curso</a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-sm-12 d-none d-md-block">
-
-                                <picture>
-                                    <source srcset="img/cursos/porteo_ergonomico.png" type="image/png">
-                                    <source srcset="img/cursos/porteo_ergonomico.webp" type="image/webp">
-
-                                    <!--suppress CheckImageSize -->
-                                    <img src="img/cursos/porteo_ergonomico.png" class="img-responsive rounded shadow-5-strong" loading="lazy" alt="Porteo Ergonomico" style="width: 70%;">
-                                </picture>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        <?php require_once("src/html/common/carousel.html") ?>
 
         <section id="acerca">
 
@@ -313,17 +104,17 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- GRID SISTEM -->
                         <div class="row g-4">
 
-                            <?php include_once("src/html/fono_pie.html"); ?>
+                            <?php include_once("src/html/cursos/fono_pie.html"); ?>
 
-                            <?php include_once("src/html/porteo_ergonomico.html"); ?>
+                            <?php include_once("src/html/cursos/porteo_ergonomico.html"); ?>
 
-                            <?php include_once("src/html/capsulas.html"); ?>
+                            <?php include_once("src/html/cursos/capsulas.html"); ?>
 
-                            <?php include_once("src/html/neonatal.html"); ?>
+                            <?php include_once("src/html/cursos/neonatal.html"); ?>
 
-                            <?php include_once("src/html/ra.html"); ?>
+                            <?php include_once("src/html/cursos/ra.html"); ?>
 
-                            <?php include_once("src/html/blw.html"); ?>
+                            <?php include_once("src/html/cursos/blw.html"); ?>
                         </div>
                     </div>
                 </div>
