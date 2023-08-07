@@ -102,10 +102,10 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- Tabs navs -->
                         <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Cursos Acceso Inmediato</a>
+                                <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Cursos Programados</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Cursos Programados</a>
+                                <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Cursos Acceso Inmediato</a>
                             </li>
                         </ul>
                         <!-- Tabs navs -->
@@ -113,19 +113,6 @@ header('Accept-Encoding: gzip, compress, br');
                         <!-- Tabs content -->
                         <div class="tab-content" id="ex1-content">
                             <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
-
-                                <!-- GRID SISTEM -->
-                                <div class="row g-4">
-
-                                    <?php include_once("src/html/cursos/blw.html"); ?>
-
-                                    <?php include_once("src/html/cursos/porteo_ergonomico.html"); ?>
-
-                                    <?php include_once("src/html/cursos/capsulas.html"); ?>
-
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
 
                                 <div class="row g-4">
                                     <?php include_once("src/html/cursos/frenillo_lingual.html"); ?>
@@ -135,8 +122,18 @@ header('Accept-Encoding: gzip, compress, br');
                                     <?php include_once("src/html/cursos/fono_pie.html"); ?>
 
                                     <?php include_once("src/html/cursos/neonatal.html"); ?>
+                                </div>
 
-                                    
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+
+                                <!-- GRID SISTEM -->
+                                <div class="row g-4">
+                                    <?php include_once("src/html/cursos/blw.html"); ?>
+
+                                    <?php include_once("src/html/cursos/porteo_ergonomico.html"); ?>
+
+                                    <?php include_once("src/html/cursos/capsulas.html"); ?>
                                 </div>
                             </div>
                         </div>
