@@ -115,6 +115,8 @@ header('Accept-Encoding: gzip, compress, br');
                             <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
 
                                 <div class="row g-4">
+                                <?php include_once("src/html/cursos/autismo.html"); ?>
+
                                     <?php include_once("src/html/cursos/frenillo_lingual.html"); ?>
 
                                     <?php include_once("src/html/cursos/ra.html"); ?>
