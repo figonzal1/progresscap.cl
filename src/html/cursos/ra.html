@@ -105,6 +105,7 @@
         target="_blank"
         rel="noopener noreferrer nofollow"
         href="https://drive.google.com/file/d/1kkk4ZFH0DAbEn-ZkMwzNDZzJpUtpehsS/view"
+        id="infoRa"
         ><em class="fas fa-plus fa-lg me-2"></em>información</a
       >
 
@@ -113,6 +114,7 @@
         class="btn btn-primary btn-lg"
         data-mdb-toggle="modal"
         data-mdb-target="#raModal"
+        id="modalCompraRa"
       >
         <em class="fas fa-cart-shopping fa-lg me-2"></em>Comprar
       </button>
@@ -143,11 +145,18 @@
                 <div class="card border border-dark text-center me-3">
                   <div class="card-header">Plan Individual</div>
                   <div class="card-body">
-                    <h5 class="card-title text-decoration-line-through">Antes: $350.000</h5>
+                    <h5 class="card-title text-decoration-line-through">
+                      Antes: $350.000
+                    </h5>
                     <h5 class="card-title">Promo: $280.000 clp por persona</h5>
-                    <script src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
-data-preference-id="708921149-f6a6f25b-3841-47c2-959f-5668e58a0d88" data-source="button">
-</script>
+
+                    <span id="btnMercadoPagoRa">
+                      <script
+                        src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="708921149-f6a6f25b-3841-47c2-959f-5668e58a0d88"
+                        data-source="button"
+                      ></script>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -163,4 +172,32 @@ data-preference-id="708921149-f6a6f25b-3841-47c2-959f-5668e58a0d88" data-source=
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    $("#infoRa").click(function () {
+      console.log("Programa RA");
+      fbq("track", "ViewContent", { content_name: "Programa RA" });
+    });
+
+    $("#modalCompraRa").click(function () {
+      console.log("Presionar modal de compra");
+      fbq("track", "InitiateCheckout", {
+        content_name: "Planes RA",
+        currency: "CLP",
+        value: 280000,
+      });
+    });
+
+    $(window).on("load", function () {
+      $("body").on("click", "#btnMercadoPagoRa", function () {
+        console.log("Comprar curso ra");
+        fbq("track", "Purchase", {
+          content_type: "individual",
+          content_name: "Compra curso RA",
+          currency: "CLP",
+          value: 280000,
+        });
+      });
+    });
+  </script>
 </div>

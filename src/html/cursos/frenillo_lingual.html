@@ -109,6 +109,7 @@
         target="_blank"
         rel="noopener noreferrer nofollow"
         href="https://drive.google.com/file/d/1XWft0SGe4RkSX-jXSFIkKRGJot8saNcE/view?usp=drivesdk"
+        id="infoFrenillo"
         ><em class="fas fa-plus fa-lg me-2"></em>información</a
       >
 
@@ -117,6 +118,7 @@
         class="btn btn-primary btn-lg"
         data-mdb-toggle="modal"
         data-mdb-target="#blwModal"
+        id="modalCompraFrenillo"
       >
         <em class="fas fa-cart-shopping fa-lg me-2"></em>Comprar
       </button>
@@ -148,11 +150,13 @@
                   <div class="card-header">Plan Individual</div>
                   <div class="card-body">
                     <h5 class="card-title">$50.000 clp por persona</h5>
-                    <script
-                      src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
-                      data-preference-id="708921149-fb5b9a09-10d8-4d25-a933-8cdbd9fae51e"
-                      data-source="button"
-                    ></script>
+                    <span id="btnMercadoPagoFrenilloIndividual">
+                      <script
+                        src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="708921149-fb5b9a09-10d8-4d25-a933-8cdbd9fae51e"
+                        data-source="button"
+                      ></script>
+                    </span>
                   </div>
                 </div>
 
@@ -160,11 +164,13 @@
                   <div class="card-header">Plan Grupal/Convenios</div>
                   <div class="card-body">
                     <h5 class="card-title">$43.000 clp por persona</h5>
-                    <script
-                      src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
-                      data-preference-id="708921149-9d904841-1512-405a-b14b-9ff587207151"
-                      data-source="button"
-                    ></script>
+                    <span id="btnMercadoPagoFrenilloConvenio">
+                      <script
+                        src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="708921149-9d904841-1512-405a-b14b-9ff587207151"
+                        data-source="button"
+                      ></script>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -180,4 +186,43 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    $("#infoFrenillo").click(function () {
+      console.log("Programa FRENILLO");
+      fbq("track", "ViewContent", { content_name: "Programa Frenillo" });
+    });
+
+    $("#modalCompraFrenillo").click(function () {
+      console.log("Presionar modal de compra");
+      fbq("track", "InitiateCheckout", {
+        content_name: "Planes Frenillo",
+        currency: "CLP",
+      });
+    });
+
+    $(window).on("load", function () {
+      $("body").on("click", "#btnMercadoPagoFrenilloIndividual", function () {
+        console.log("Comprar curso individual");
+        fbq("track", "Purchase", {
+          content_type: "individual",
+          content_name: "Compra curso Frenillo",
+          currency: "CLP",
+          value: 50000,
+        });
+      });
+    });
+
+    $(window).on("load", function () {
+      $("body").on("click", "#btnMercadoPagoFrenilloConvenio", function () {
+        console.log("Comprar curso convenio");
+        fbq("track", "Purchase", {
+          content_type: "convenio",
+          content_name: "Compra curso Frenillo",
+          currency: "CLP",
+          value: 43000,
+        });
+      });
+    });
+  </script>
 </div>

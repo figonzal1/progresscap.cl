@@ -41,6 +41,7 @@
                     href="https://api.whatsapp.com/send?phone=56956876165"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    id="mobileContact"
                     >+569 5687 6165</a
                   >
                 </p>
@@ -62,7 +63,9 @@
 
               <div class="ms-3 flex-grow-1">
                 <p class="text-muted m-0">
-                  <a href="mailto:capacitaciones.progress@gmail.com"
+                  <a
+                    href="mailto:capacitaciones.progress@gmail.com"
+                    id="emailContact"
                     >capacitaciones.progress@gmail.com</a
                   >
                 </p>
@@ -131,6 +134,7 @@
             role="button"
             style="background-color: #e1306c"
             target="_blank"
+            id="igContact"
             ><em class="fab fa-instagram fa-lg"></em
           ></a>
 
@@ -142,6 +146,7 @@
             role="button"
             style="background-color: #e1306c"
             target="_blank"
+            id="youtubeContact"
             ><em class="fab fa-youtube fa-lg"></em
           ></a>
         </div>
@@ -179,4 +184,22 @@
       >
     </p>
   </div>
+
+  <script type="text/javascript">
+    $("#mobileContact").click(function () {
+      fbq("track", "Contact", { contact_type: "cellphone" });
+    });
+
+    $("#emailContact").click(function () {
+      fbq("track", "Contact", { contact_type: "email" });
+    });
+
+    $("#igContact").click(function () {
+      fbq("track", "Contact", { contact_type: "instagram" });
+    });
+
+    $("#youtubeContact").click(function () {
+      fbq("track", "Contact", { contact_type: "youtube" });
+    });
+  </script>
 </section>
