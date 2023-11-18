@@ -190,6 +190,7 @@
       $("body").on("click", "#btnMercadoPagoRa", function () {
         console.log("Comprar curso ra");
         fbq("track", "Purchase", {
+          content_id: "ra-individual",
           content_type: "individual",
           content_name: "Compra curso RA",
           currency: "CLP",

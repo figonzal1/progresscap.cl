@@ -204,6 +204,7 @@
       $("body").on("click", "#btnMercadoPagoFrenilloIndividual", function () {
         console.log("Comprar curso individual");
         fbq("track", "Purchase", {
+          content_id: "frenillo-individual",
           content_type: "individual",
           content_name: "Compra curso Frenillo",
           currency: "CLP",
@@ -216,6 +217,7 @@
       $("body").on("click", "#btnMercadoPagoFrenilloConvenio", function () {
         console.log("Comprar curso convenio");
         fbq("track", "Purchase", {
+          content_id: "frenillo-convenio",
           content_type: "convenio",
           content_name: "Compra curso Frenillo",
           currency: "CLP",

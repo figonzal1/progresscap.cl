@@ -209,6 +209,7 @@
       $("body").on("click", "#btnMercadoPagoNeoIndividual", function () {
         console.log("Comprar curso individual");
         fbq("track", "Purchase", {
+          content_id: "f-neo-individual",
           content_type: "individual",
           content_name: "Compra curso Fono-neo",
           currency: "CLP",
@@ -221,6 +222,7 @@
       $("body").on("click", "#btnMercadoPagoNeoConvenio", function () {
         console.log("Comprar curso convenio");
         fbq("track", "Purchase", {
+          content_id: "f-neo-convenio",
           content_type: "convenio",
           content_name: "Compra curso Fono-neo",
           currency: "CLP",
