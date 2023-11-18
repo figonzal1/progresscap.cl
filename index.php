@@ -104,9 +104,9 @@ header('Accept-Encoding: gzip, compress, br');
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Cursos Programados</a>
                             </li>
-                            <li class="nav-item" role="presentation">
+                            <!--<li class="nav-item" role="presentation">
                                 <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Cursos Acceso Inmediato</a>
-                            </li>
+                            </li>-->
                         </ul>
                         <!-- Tabs navs -->
 
@@ -117,11 +117,7 @@ header('Accept-Encoding: gzip, compress, br');
                                 <div class="row g-4">
                                     <?php include_once("src/html/cursos/ra.html"); ?>
 
-                                    <?php include_once("src/html/cursos/autismo.html"); ?>
-
                                     <?php include_once("src/html/cursos/frenillo_lingual.html"); ?>
-
-                                    <?php include_once("src/html/cursos/fono_pie.html"); ?>
 
                                     <?php include_once("src/html/cursos/neonatal.html"); ?>
                                 </div>
@@ -131,11 +127,6 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 <!-- GRID SISTEM -->
                                 <div class="row g-4">
-                                    <?php include_once("src/html/cursos/blw.html"); ?>
-
-                                    <?php include_once("src/html/cursos/porteo_ergonomico.html"); ?>
-
-                                    <?php include_once("src/html/cursos/capsulas.html"); ?>
                                 </div>
                             </div>
                         </div>
