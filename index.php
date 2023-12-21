@@ -115,13 +115,15 @@ header('Accept-Encoding: gzip, compress, br');
                             <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
 
                                 <div class="row g-4">
+
+                                    <?php include("src/html/cursos/ra_tea.html"); ?>
+
                                     <?php include_once("src/html/cursos/ra.html"); ?>
 
                                     <?php include_once("src/html/cursos/frenillo_lingual.html"); ?>
 
                                     <?php include_once("src/html/cursos/neonatal.html"); ?>
                                 </div>
-
                             </div>
                             <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
 
