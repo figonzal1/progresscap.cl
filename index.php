@@ -116,6 +116,8 @@ header('Accept-Encoding: gzip, compress, br');
 
                                 <div class="row g-4">
 
+                                    <?php include("src/html/cursos/fono_educ.html"); ?>
+
                                     <?php include("src/html/cursos/ra_tea.html"); ?>
 
                                     <?php include_once("src/html/cursos/ra.html"); ?>
