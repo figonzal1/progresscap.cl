@@ -3,7 +3,7 @@ header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header("X-XSS-Protection: 1; mode=block");
 header("Referrer-Policy: strict-origin-when-cross-origin");
-header("Content-Security-Policy: default-src 'self' https://*.google.com/ https://*.facebook.com ;img-src 'self' http://*.facebook.com http://*.bluehosting.cl data:;frame-src 'self' https://*.google.com/ https://www.mercadopago.cl  ;font-src 'self' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' http://*.facebook.net https://ajax.googleapis.com https://www.mercadopago.cl ;style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/");
+header("Content-Security-Policy: default-src 'self' https://*.google.com/ https://*.facebook.com ;img-src 'self' http://*.facebook.com http://*.bluehosting.cl data:;frame-src 'self' https://*.google.com/ https://www.mercadopago.cl  ;font-src 'self' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com ;script-src 'self' 'unsafe-inline' https://www.googletagmanager.com/ http://*.facebook.net https://ajax.googleapis.com https://www.mercadopago.cl ;style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/");
 header("Permissions-Policy: fullscreen=(), geolocation=(), camera=(), microphone=()");
 header('Accept-Encoding: gzip, compress, br');
 ?>
